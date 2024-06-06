@@ -1,0 +1,32 @@
+# Curriculum Vitae
+
+## Personal Information
+- **Name**: Dr. Julian Dehne
+- **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
+- **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
+- **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
+
+## Education
+- **Doctorate in Educational Technologies**: University of Potsdam, 02.12.2014 - 11.03.2021
+- **M.S. in Computer Science and Political Science**: University of Potsdam, 19.09.2009 - 13.10.2014
+- **B.A. in European Studies**: University of Passau, 15.04.2008 - 19.09.2009
+
+## Job Experience
+- **Research Associate**: University of Göttingen, 31.08.2021 – 31.04.2024
+- **Research Associate**: Humboldt University of Berlin, 31.08.2020 - 31.01.2021
+- **Research Assistant**: University of Potsdam, 26.10.2014 - 31.08.2020
+- **Teacher**: Berlin, 01.08.2013 - 15.04.2014
+- **Intern**: International Organization for Migration, 15.01.2009 - 15.04.2009
+
+## Languages
+- **English**: Fluent (TOEFL CBS 283/300)
+- **French**: Advanced (University of Geneva Certificate)
+- **Spanish**: Advanced (Maccu Piccu Spanish School Certificate)
+- **Polish**: A1 (Unicert)
+- **Latin**: “Großes Latinum”
+- **Ancient Greek**: Graecum
+
+## Skills
+- **Programming Languages**: Java, JavaScript, Scala, Prolog, Python
+- **Databases**: SQL derivatives, Neo4j, RDF
+- **Statistical Software**: Stata, Octave, R, Python
