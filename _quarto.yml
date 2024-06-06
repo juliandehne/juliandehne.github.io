@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Julian Dehne"
+  description: "Julian's Academic Website"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Software"
+        href: software.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Contact"
+        href: contact.qmd
+execute:
+  freeze: auto

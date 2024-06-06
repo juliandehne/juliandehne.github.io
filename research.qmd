@@ -1,0 +1,19 @@
+
+# Research
+
+## Research Interests
+- Educational technologies
+- Algorithms in the educational sector
+- Modeling of learning processes
+- Learning analytics and creativity research
+- Higher education didactics
+- Curriculum research
+
+## Current Projects
+- **Delaboration Laboratory**: University of Göttingen, 2021 – Present
+- **Detecting and Supporting Creativity Online**: Humboldt University Berlin, 2020 – 2021
+- **Research Orientation in the Study Entrance Phase**: University of Potsdam, 2015 - 2020
+- **E-Learning in Study Areas**: University of Potsdam, 2012 – 2015
+
+## Dissertation
+**"Possibilities and Limitations of Media Support for Inquiry-Based Learning"**: Explores the use of computer technology to support inquiry-based learning in higher education. [Read more](https://doi.org/10.25932/publishup-49789)
