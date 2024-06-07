@@ -6,10 +6,17 @@
 \usepackage{geometry}
 \usepackage{graphicx} % Add this package to handle graphics
 \geometry{a4paper, margin=1in}
+\usepackage{pdfpages}
+\includepdfset{pages=-}
+
 
 % Define \tightlist to avoid errors
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setkeys{Gin}{width=0.5\textwidth}
+
+
 
 % Custom section command to include page breaks only for main sections
 %\let\oldsection\section
@@ -18,5 +25,7 @@
 \begin{document}
 
 $body$
+
+\includepdf[pages={-}]{C:/Users/dehnejn/Dropbox/Karriere/bewerbungsunterlagen/zeugnisse.pdf}
 
 \end{document}

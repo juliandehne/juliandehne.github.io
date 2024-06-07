@@ -1,7 +1,19 @@
-Hello! I am Julian Dehne!
+---
+# Resources {.unnumbered}
+---
+
+
+::: {.content-visible when-profile="application_zurich_2024"}
+# Application for Postdoc Position (100%) in the Research Group of Professor Karsten Donnay
+:::
+
+::: {.content-visible when-format="html"}
+Hi! This is my personal website. Have a look around!
+:::
 
 - **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
 - **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
 - **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
+
 
 ![](img/julian_profile.jpg)

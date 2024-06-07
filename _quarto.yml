@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: _site
+  title: Julian Dehne
 
 website:
   title: "Julian Dehne"
@@ -23,3 +24,7 @@ website:
         href: contact.qmd
 execute:
   freeze: auto
+
+format:
+  html:
+    css: styles.css
