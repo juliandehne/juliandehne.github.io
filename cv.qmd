@@ -1,32 +1,77 @@
-# Curriculum Vitae
+---
+author: Julian Dehne
+title: Expert in Learning Technologies and CSS
+format:
+  classic-cv-pdf: default
+cvfooter:
+  left: "mr.schochastics.net"
+  right: "https://juliandehne.github.io/"
+cvcolor: 58748F #without `#`
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvmeta:
+  - title: Status
+    left: Research Software Engineer, GESIS
+    right: Cologne, Germany
+  - title: Field
+    left: Software Engineering, Social Sciences, Education
+    right: https://juliandehne.github.io/
+  - title: Techs
+    left: Python, Scala, Java, R, Transformers
+    right: julian.dehne@gmail.com
+execute:
+  echo: false
+---
 
-## Personal Information
-- **Name**: Dr. Julian Dehne
-- **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
-- **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
-- **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, details) {
 
-## Education
-- **Doctorate in Educational Technologies**: University of Potsdam, 02.12.2014 - 11.03.2021
-- **M.S. in Computer Science and Political Science**: University of Potsdam, 19.09.2009 - 13.10.2014
-- **B.A. in European Studies**: University of Passau, 15.04.2008 - 19.09.2009
+    command_start <- "\\cvevent"
 
-## Job Experience
-- **Research Associate**: University of Göttingen, 31.08.2021 – 31.04.2024
-- **Research Associate**: Humboldt University of Berlin, 31.08.2020 - 31.01.2021
-- **Research Assistant**: University of Potsdam, 26.10.2014 - 31.08.2020
-- **Teacher**: Berlin, 01.08.2013 - 15.04.2014
-- **Intern**: International Organization for Migration, 15.01.2009 - 15.04.2009
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}")
+    
+    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
+    res <- paste0(res, "{",tbl[[details]],"}")
 
-## Languages
-- **English**: Fluent (TOEFL CBS 283/300)
-- **French**: Advanced (University of Geneva Certificate)
-- **Spanish**: Advanced (Maccu Piccu Spanish School Certificate)
-- **Polish**: A1 (Unicert)
-- **Latin**: “Großes Latinum”
-- **Ancient Greek**: Graecum
+    cat(res, sep = "\n")
+}
+```
 
-## Skills
-- **Programming Languages**: Java, JavaScript, Scala, Prolog, Python
-- **Databases**: SQL derivatives, Neo4j, RDF
-- **Statistical Software**: Stata, Octave, R, Python
+# Summary
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# Experience
+
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details, ~tasks,
+    "Team Lead", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
+    "Transparent Social Analytics, Department of Computational Social Science", c("Coordination of a project to build an Open Science platform with reusable code and tutorials", "Research on Open Science Practices", "Implementation of tools to enhance reproducibility and facilitate research with digital data in R"),
+    "Presidential Fellow", "University of Manchester", "Sep. 2018 - Feb. 2022",
+    "Sociology Department", c("Research on Disinformation on Social Media", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
+    "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
+    "Post Doctoral Researcher", "University of Konstanz", "Oct. 2015 - Oct. 2017", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Webscraping and harmonizing a large corpus of football data"),
+    "Ph.D. Candidate", "University of Konstanz", "Nov. 2012 - Sep. 2015", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries")
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+```
+
+# Education
+
+```{r }
+#| label: education
+#| output: asis
+tibble::tribble(
+    ~degree, ~uni, ~loc, ~dates, ~details,
+    "Ph.D. in Computer Science", "University of Konstanz", "Konstanz, Germany", "Nov. 2012 - Sep. 2015", c("Thesis: A Positional Approach for Network Centrality", "Developed and implemented new methods to assess network centrality"),
+    "Diploma in Business Mathematics", "KIT", "Karlsruhe, Germany", "Sep. 2006 - Jul. 2012", c("Thesis: Modularity Maximization", "Implementation and comparison of different clustering algorithms using Matlab")
+) |>
+    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```

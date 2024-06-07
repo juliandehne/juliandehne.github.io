@@ -12,4 +12,3 @@ Hi! This is my personal website. Have a look around!
 ![](img/julian_profile.jpg)
 
 :::
-

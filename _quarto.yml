@@ -11,6 +11,8 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "CV"
+        href: cv_old.qmd
+      - text: "CV Download"
         href: cv.qmd
       - text: "Publications"
         href: publications.qmd
@@ -22,8 +24,6 @@ website:
         href: teaching.qmd
       - text: "Contact"
         href: contact.qmd
-execute:
-  freeze: auto
 
 format:
   html:
