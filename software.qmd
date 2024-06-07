@@ -1,1 +1,23 @@
-While in Potsdam, I developed a pioneering concept on the persistence of learning outcomes and its applications. However, encountering challenges in mainstreaming the [COMPBASE](https://gitup.uni-potsdam.de/dehne/compbase) (not public) platform for testing, I redirected my thesis toward Inquiry-Based Learning, leading to the creation of the [FL-Trail](https://github.com/juliandehne/fltrail) tool that supports student-centered learning.
+# COMPBASE - A Generic Competency Database for Learning Organisations
+
+While in Potsdam, I developed a pioneering concept on the persistence of learning outcomes and its applications.
+However, encountering challenges in mainstreaming the [COMPBASE](https://gitup.uni-potsdam.de/dehne/compbase) (not public) platform for testing, I redirected my thesis toward Inquiry-Based Learning.
+
+![](img/ma_services.jpg){#fig-foo width="50%"}
+
+# FL-TRAIL - Supporting Inquiry-Based Learning in Higher Education
+
+During my PHD I developed  [FL-Trail](https://github.com/juliandehne/fltrail) tool that supports student-centered learning.
+
+![](img/fltrail.png)
+
+# Delab - A Chatbot Research Environment for Online Deliberation
+
+In Göttingen Valentin Gold and me developed a [toolchain](https://github.com/juliandehne/delab) that can download live discussions on social media to be presented for human-in-the-loop coders. This allowed us to test different moderation strategies for the chatbot to improve social media discussion.
+
+![](img/delab.png)
+
+# Other Involvements
+
+- Personal Learning Environment (Potsdam): The forerunner of the BIRD project, one of the most ambitious e-learning platforms build in Java on top of Liferay
+- RouteMe: Riding on the wave of mobile based learning: students could learning adhoc-networks running around campus with their phones
