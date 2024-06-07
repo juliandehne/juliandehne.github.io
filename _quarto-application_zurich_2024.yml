@@ -5,12 +5,16 @@ project:
 format:
   pdf:
     documentclass: scrreprt
-    template: application_template.tex
+    # template: application_template.tex
     toc: False
     colorlinks: true
     toc-depth: 2
     bibliography: references.bib
     number-sections: false
+    template-partials:
+      - title.tex
+      - before-body.tex
+      - after-body.tex
 
 book:
   title: "zurich_application"
