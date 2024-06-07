@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: _application/zurich_2024
+format:
+  pdf:
+    documentclass: scrreprt
+    template: application_template.tex
+    toc: False
+    number-sections: true
+    colorlinks: true
+    toc-depth: 2
+    bibliography: references.bib
+
+book:
+  title: "Application"
+  author: "Julian Dehne"
+  chapters:
+    - index.qmd
+    - cv.qmd
+    - publications.qmd
+    - software.qmd
+    - research.qmd
+    - teaching.qmd
+    - contact.qmd

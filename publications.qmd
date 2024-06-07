@@ -1,7 +1,22 @@
 
-## Selected Publications
+# Selected Publications
 
-### German Language
+## Preprints
+
+- **Riethmüller, F., Dehne, J., & Al-Gaddooa, D. (2024)**: Which Identities Are Mobilized: Towards an automated detection of social group appeals in political texts. arXiv preprint arXiv:2405.01904.
+
+- **Dehne, J., & Gold, V. (2023)**: Strategic Communication and Deliberation on Climate Change of different Actor Groups using Twitter. arXiv preprint arXiv:2306.07144.
+
+- **Dehne, J., & Gold, V. (2023)**: Consistent, Central and Comprehensive Participation on Social Media. arXiv preprint arXiv:2306.07048.
+
+
+## Ongoing
+- **Dehne J., & Gold V. (2024, under review)**: Comparing the Effectiveness of Different User Moderation Strategies for Deliberation on Twitter. In: Journal of Political Communication.
+
+- **Dehne J., & Gold V. (2024, under review)**: Strategies for Deliberative Moderation in Social Media. In: Journal of Deliberative Democracy.
+
+
+## German Language
 - **Dehne J., Strickroth S., & Lucke U. (2020)**: FL-Trail: digitally supporting group-based inquiry learning. In: Zender R., Ifenthaler D., Leonhardt T., & Schumacher C. (Eds.): DELFI 2020 - Die 18. Fachtagung Bildungstechnologien der Gesellschaft für Informatik e.V. Bonn: Gesellschaft für Informatik e.V. (pp. 319-330).
 
 - **Dehne Julian, Knoth Alexander, & Lucke Ulrike (2019)**: Strengthening the study entry phase research-based learning and the use of digital media. In: Gabi Reinmann, Eileen Lübcke, and Anna Heudorfer (eds.): Research-based learning in the study entry phase. Wiesbaden: Springer Fachmedien Wiesbaden.
@@ -10,7 +25,7 @@
 
 - **Dehne Julian, Wiepke Axel, & Lucke Ulrike (2017)**: Evaluating e-learning - A comment on "Media will never influence learning". In: Christoph Igel, Carsten Ullrich, and Wessner Martin (eds.): Bildungsräume2017: Gesellschaft für Informatik Bonn, pp. 167-177.
 
-### International
+## International
 - **Dehne Julian, & Lucke Ulrike (2015)**: An infrastructure for cross-platform competence-based assessment. In: Facing the Challenges of Assessing 21st Century Skills in the Newly Emerging Educational Ecosystems (ECTEL), Toledo, pp. 29-38.
 
 - **Dehne Julian, & Nguyen Thi (2017)**: Defining consistency in higher education. EARLI 2017, Tampere, August 2017. (Poster).
@@ -23,7 +38,3 @@
 
 - **Paaßen B., & Dehne J. (2022)**: A conceptual graph-based model of creativity in learning. In: Frontiers in Education, (p. 851). Frontiers.
 
-### Ongoing
-- **Dehne J., & Gold V. (2024, under review)**: Comparing the Effectiveness of Different User Moderation Strategies for Deliberation on Twitter. In: Journal of Political Communication.
-
-- **Dehne J., & Gold V. (2024, under review)**: Strategies for Deliberative Moderation in Social Media. In: Journal of Deliberative Democracy.

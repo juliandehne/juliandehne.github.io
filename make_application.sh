@@ -1,0 +1,1 @@
+ quarto render application.qmd --to pdf --output-dir _application

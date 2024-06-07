@@ -1,0 +1,22 @@
+% custom_template.tex
+\documentclass{scrreprt}
+
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{geometry}
+\usepackage{graphicx} % Add this package to handle graphics
+\geometry{a4paper, margin=1in}
+
+% Define \tightlist to avoid errors
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Custom section command to include page breaks only for main sections
+%\let\oldsection\section
+%\renewcommand\section{\newpage\oldsection}
+
+\begin{document}
+
+$body$
+
+\end{document}

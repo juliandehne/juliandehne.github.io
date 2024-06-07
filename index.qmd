@@ -1,11 +1,5 @@
 Hello! I am Julian Dehne!
 
-After completing a BA in European Studies at the University of Passau, I sought to enhance my background with expertise in Computer Science. The dual subject teacher program in Brandenburg and Berlin uniquely offered a combination of Political Science and Computer Science, which aligned perfectly with my interests. During my stay at the University of Potsdam, I had the privilege of working under Professor Ulrike Lucke, a leading figure in e-learning research in Germany.
-
-Following my PhD, I briefly joined Humboldt University in Berlin, where I co-authored one of the first conceptual papers on fostering creativity through e-learning. Subsequently, I decided to return to my roots in the social sciences, accepting a PostDoc position at the University of Göttingen in the CSS field. Here, our team has been developing an innovative chatbot designed to facilitate deliberation on social media, which is nearing operational functionality.
-
-
-
 - **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
 - **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
 - **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
