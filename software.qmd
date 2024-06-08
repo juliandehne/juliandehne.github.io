@@ -1,15 +1,4 @@
-## COMPBASE - A Generic Competency Database for Learning Organisations
-
-While in Potsdam, I developed a pioneering concept on the persistence of learning outcomes and its applications.
-However, encountering challenges in mainstreaming the [COMPBASE](https://gitup.uni-potsdam.de/dehne/compbase) (not public) platform for testing, I redirected my thesis toward Inquiry-Based Learning.
-
-![](img/ma_services.jpg){#fig-foo width="50%"}
-
-## FL-TRAIL - Supporting Inquiry-Based Learning in Higher Education
-
-During my PHD I developed  [FL-Trail](https://github.com/juliandehne/fltrail) tool that supports student-centered learning.
-
-![](img/fltrail.png)
+# Software
 
 ## Delab - A Chatbot Research Environment for Online Deliberation
 
@@ -17,7 +6,31 @@ In Göttingen Valentin Gold and me developed a [toolchain](https://github.com/ju
 
 ![](img/delab.png)
 
+## COMPBASE - A Generic Competency Database for Learning Organisations
+
+While in Potsdam, I developed a pioneering concept on the persistence of learning outcomes and its applications.
+However, encountering challenges in mainstreaming the [COMPBASE](https://gitup.uni-potsdam.de/dehne/compbase) (not public) platform for testing, I redirected my thesis toward Inquiry-Based Learning.
+
+::: {.content-visible when-format="html"}
+
+![](img/ma_services.jpg){#fig-foo width="50%"}
+
+:::
+
+## FL-TRAIL - Supporting Inquiry-Based Learning in Higher Education
+
+During my PhD I developed  [FL-Trail](https://github.com/juliandehne/fltrail) tool that supports student-centered learning.
+
+::: {.content-visible when-format="html"}
+![](img/fltrail.png)
+:::
+
+## Libraries
+
+- [delab-trees](https://pypi.org/project/delab-trees/): A python library to analyze social media conversation trees
+- [delab-socialmedia](https://pypi.org/project/delab-socialmedia/) A python library to download social media conversation trees, download daily conversation samples, and post on social media
+
 ## Other Involvements
 
-- Personal Learning Environment (Potsdam): The forerunner of the BIRD project, one of the most ambitious e-learning platforms build in Java on top of Liferay
-- RouteMe: Riding on the wave of mobile based learning: students could learning adhoc-networks running around campus with their phones
+- Personal Learning Environment (Potsdam): The forerunner of the BIRD project, one of the most ambitious e-learning platforms build with Java on top of Liferay
+- RouteMe: Riding on the wave of mobile based learning: students could learn adhoc-networks running around campus with their phones

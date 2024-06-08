@@ -16,14 +16,16 @@ website:
         href: cv.qmd
       - text: "Publications"
         href: publications.qmd
+      - text: "Laudate"
+        href: achievements.qmd
       - text: "Software"
         href: software.qmd
-      - text: "Research"
+      - text: "Research Profile"
         href: research.qmd
       - text: "Teaching"
         href: teaching.qmd
-      - text: "Contact"
-        href: contact.qmd
+      - text: "Other"
+        href: private.qmd
 
 format:
   html:

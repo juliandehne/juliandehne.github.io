@@ -3,12 +3,13 @@
 ## Courses Taught
 - **Teacher for Computer Science and Political Education**: Albert-Einstein-Gymnasium, Berlin
 - **Tutor for Applied Logic and Didactics of Computer Science**
-- **Seminars**:
-    - "Researching together" - Software project for student research tools
-    - Algorithms for Group Formation
-    - Exercise for the lecture E-Learning
-    - Practical project E-Learning
-    - Social Network Analysis – Research Seminar
+- **Seminars and Lectures**:
+    - Researching Together - Software Project (MA level)
+    - Algorithms for Group Formation (MA level)
+    - Principles of E-Learning, Exercise (BA level)
+    - Practical E-Learning Project (MA level)
+    - Social Network Analysis – Research Seminar (MA level)
 
 ## Supervision
-- Supervision of students (three master theses, two bachelor theses)
+- Master Thesis (2)
+- Bachelor Thesis (4)

@@ -1,3 +1,13 @@
+
 # Motivation Letter
 
-motivational letter to come
+My motivation for a PostDoc position in the research field of digital media and deliberation is based on (a) my genuine interest, (b) having worked on the exact same topic for the last three years, and (c) my academic profile which is tailored to the use of computer methods in social sciences.
+
+(a) My interest in computational social sciences dates back to 2008 where I studied computer science and political science in parallel. At the time computational social science was existent as a field and I just happened to have a dual interest in the two subjects. In political science word clouds were all the rage and I wondered if language could not be used as a data source for political culture measurements. When I offered this idea to my supervisor I was shunned as a positivist. Last year I attended the EPSA conference and I genuinely feel that times have changed: the vast majority of papers are using NLP methods and when I grounded my research in deliberation theory, barely anyone listened.
+
+(b) the last three years I worked in Göttingen with Valentin Gold on a project called "deliberation laboratory". The goal was to develop a chatbot that could interact in social media before discussion escalated and became hateful. Unfortunately, the project funding ran out after we finally established a theoretical basis, a research design and a human-in-the-loop experiment. The reason for the slow progress was that the assumptions of what social media discussions look like and how much influence a chatbot might have been a little optimistic. However, publications are under way and I would be thrilled to continue the work and bring in lessons learned. It really feels like I just fully arrived in the CSS community, too. When I was almost offered a professorship in my former field of study, I seriously considered declining in order to continue in my preferred field.
+
+(c) the position requires a strong background in computational social science, NLP, ML and databases. I can confidently say, that I fulfil these technical skill requirements better than most of the social scientists that later in their career turned their interest to computer science. In contrast to Machine Learning experts I also have a grasp of the literature and can communicate the mathematical ideas well. Having taught computer science at the high school level really helps there. Moreover, I have a lot of experience with the engineering which becomes more and more relevant as the systems needed for the studies become more complex.
+
+In summary, my Archilles' heel of too many interests works to my advantage in this case, as the proposed position fits perfectly at the intersection of my pursuits. I would be honored be invited for an interview. 
+

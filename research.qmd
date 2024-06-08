@@ -1,19 +1,22 @@
 
-# Research
+# Research Profile
 
-## Research Interests
+Alas, I have two scientific profiles (one too many). And I have written more software than published papers. However, I have done cutting edge stuff in two disjunct scientific fields. I have not republished my German contributions in English and I have not cut down my 400-page thesis into 10 papers. I have moved from a field with little competition to one with a lot. And I was hamstrung by medical problems for two years. I genuinely like science and hope to stay the way I am. If I had to be honest which field I am more accomplished in, I would say that I am an expert in learning technologies, but I fill a gap in the CSS world by being a fully educated computer scientist.
+
+## Computational Social Sciences Profile
+- Fostering Online Deliberation with Chatbots
+- Deliberation Theory
+- Language in Coalition Agreements
+- Detecting Social Group Appeals
+- Self Left-Right Placements and Ideological Embeddings
+
+## Learning Technologies Profile
 - Educational technologies
 - Algorithms in the educational sector
 - Modeling of learning processes
 - Learning analytics and creativity research
 - Higher education didactics
 - Curriculum research
-
-## Current Projects
-- **Delaboration Laboratory**: University of Göttingen, 2021 – Present
-- **Detecting and Supporting Creativity Online**: Humboldt University Berlin, 2020 – 2021
-- **Research Orientation in the Study Entrance Phase**: University of Potsdam, 2015 - 2020
-- **E-Learning in Study Areas**: University of Potsdam, 2012 – 2015
 
 ## Dissertation
 **"Possibilities and Limitations of Media Support for Inquiry-Based Learning"**: Explores the use of computer technology to support inquiry-based learning in higher education. [Read more](https://doi.org/10.25932/publishup-49789)
