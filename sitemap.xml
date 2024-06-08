@@ -1,67 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://juliandehne.github.io/publications.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/my-website/publications.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/my-website/software.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/my-website/research.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/my-website/teaching.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
+    <loc>https://juliandehne.github.io/trajectory.html</loc>
+    <lastmod>2024-06-07T08:39:31.681Z</lastmod>
   </url>
   <url>
     <loc>https://juliandehne.github.io/software.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
+    <lastmod>2024-06-07T18:50:30.879Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/research.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/teaching.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/about.html</loc>
-    <lastmod>2024-06-06T12:17:17.689Z</lastmod>
+    <loc>https://juliandehne.github.io/publications.html</loc>
+    <lastmod>2024-06-07T18:11:08.568Z</lastmod>
   </url>
   <url>
     <loc>https://juliandehne.github.io/index.html</loc>
-    <lastmod>2024-06-06T12:17:17.689Z</lastmod>
+    <lastmod>2024-06-07T17:48:08.112Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/cv.html</loc>
-    <lastmod>2024-06-06T12:17:17.689Z</lastmod>
+    <loc>https://juliandehne.github.io/applications/zurich_2024/motivation_letter.html</loc>
+    <lastmod>2024-06-07T19:41:14.219Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/my-website/about.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
+    <loc>https://juliandehne.github.io/about.html</loc>
+    <lastmod>2024-06-06T12:11:57.328Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/my-website/index.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/my-website/cv.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/my-website/contact.html</loc>
-    <lastmod>2024-06-06T12:17:17.697Z</lastmod>
+    <loc>https://juliandehne.github.io/achievements.html</loc>
+    <lastmod>2024-06-07T18:45:25.079Z</lastmod>
   </url>
   <url>
     <loc>https://juliandehne.github.io/contact.html</loc>
-    <lastmod>2024-06-06T12:17:17.689Z</lastmod>
+    <lastmod>2024-06-07T08:39:31.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/cv_old.html</loc>
+    <lastmod>2024-06-07T17:37:57.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/private.html</loc>
+    <lastmod>2024-06-07T18:26:55.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/research.html</loc>
+    <lastmod>2024-06-07T18:47:27.255Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/teaching.html</loc>
+    <lastmod>2024-06-07T18:17:59.733Z</lastmod>
   </url>
 </urlset>
