@@ -1,6 +1,6 @@
 project:
   type: book
-  title: "Application for Postdoc Position (100%) in in Student-Facing Learning Analytics"
+  title: "Application for Postdoc Position (100%) in Student-Facing Learning Analytics"
   output-dir: _application/hagen_2024
 format:
   pdf:
@@ -16,11 +16,13 @@ format:
       - before-body.tex
       - after-body.tex
 
+
 book:
   title: "hagen_application"
   author: "Julian Dehne"
   chapters:
     - index.qmd
+    - cv_link.qmd
     - applications/hagen_2024/motivation_letter.qmd
     - publications.qmd
     - software.qmd
