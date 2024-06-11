@@ -1,7 +1,9 @@
 
 # Research Profile
 
+<!--
 Alas, I have two scientific profiles (one too many). And I have written more software than published papers. However, I have done cutting edge stuff in two disjunct scientific fields. I have not republished my German contributions in English and I have not cut down my 400-page thesis into 10 papers. I have moved from a field with little competition to one with a lot. And I was hamstrung by medical problems for two years. I genuinely like science and hope to stay the way I am. If I had to be honest which field I am more accomplished in, I would say that I am an expert in learning technologies, but I fill a gap in the CSS world by being a fully educated computer scientist.
+-->
 
 ## Computational Social Sciences Profile
 - Fostering Online Deliberation with Chatbots
