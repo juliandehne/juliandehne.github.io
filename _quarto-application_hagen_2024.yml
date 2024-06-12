@@ -1,7 +1,8 @@
 project:
   type: book
-  title: "Application for Postdoc Position (100%) in Student-Facing Learning Analytics"
   output-dir: _application/hagen_2024
+
+
 format:
   pdf:
     documentclass: scrreprt
@@ -12,22 +13,20 @@ format:
     bibliography: references.bib
     number-sections: false
     template-partials:
-      - title.tex
-      - before-body.tex
       - after-body.tex
-
-params:
-  application_title: "Application for Postdoc Position (100%) in Student-Facing Learning Analytics"
-
+    include-in-header:
+      - in-header.tex
+    output-file: "hagen_24_dehne.pdf"
 
 book:
-  title: "hagen_application"
-  author: "Julian Dehne"
+  title: "Application for Postdoc Position (100%) in Student-Facing Learning Analytics"
+  # page-navigation: false
   chapters:
-    - index.qmd
-    - cv_link.qmd
+    - index.md
+    #- cv_link.qmd
     - applications/hagen_2024/motivation_letter.qmd
     - publications.qmd
-    - software.qmd
+    # - software.qmd
     - research.qmd
     - teaching.qmd
+

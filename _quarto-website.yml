@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site
+  title: Julian Dehne
+
+website:
+  title: "Julian Dehne"
+  description: "Julian's Academic Website"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "CV"
+        href: cv_old.qmd
+      - text: "CV Download"
+        href: cv.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Laudate"
+        href: achievements.qmd
+      - text: "Software"
+        href: software.qmd
+      - text: "Research Profile"
+        href: research.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Other"
+        href: private.qmd
+
+format:
+  html:
+    css: styles.css
+
+
+execute:
+  enabled: true
+  echo: false
+  warning: false
+  error: false
+  cache: false
+  r-path: "C:/Program Files/R/R-4.4.0/bin/x64/R"
+  python-path: "C:/ProgramData/anaconda3/envs/sem_rep_left-right/bin/python"
+  freeze: auto
+

@@ -12,31 +12,20 @@ format:
     bibliography: references.bib
     number-sections: false
     template-partials:
-      - title.tex
-      - before-body.tex
       - after-body.tex
+    include-in-header:
+      - in-header.tex
+    output-file: "zurich_24_dehne.pdf"
 
-
-params:
-  application_title: "Application for Postdoc Position (100%) in the Research Group of Professor Karsten Donnay"
 
 book:
-  title: "zurich_application"
+  title: "Application for Postdoc Position (100%) in the Research Group of Professor Karsten Donnay"
   author: "Julian Dehne"
   chapters:
-    - index.qmd
-    - cv_link.qmd
+    - index.md
     - applications/zurich_2024/motivation_letter.qmd
     - publications.qmd
     - software.qmd
     - research.qmd
     - teaching.qmd
 
-execute:
-  enabled: true
-  echo: true
-  warning: false
-  error: false
-  r-path: "C:/Program Files/R/R-4.4.0/bin/x64/R"
-  python-path: "C:/ProgramData/anaconda3/envs/sem_rep_left-right/bin/python"
-  freeze: auto
