@@ -15,13 +15,25 @@ My research interests reflect my diverse background in social sciences, educatio
 
 A common theme is that past and planned research take place in predominantly uncharted and less known methodological spaces where it is hard to produce large quantities of papers that detail different aspects while maintaining a core methodological access point. However, while this may be a disadvantage during the focused PhD stage or even overwhelming when being the core developer in a postdoc project, I strongly believe that given the chance I could promote these issues from the fringes to a more central position within the communities of learning technologies and higher education. It is also the case that some of these issues have become more prominent lately, so that it should be easy to find suitable partners for collaboration. Here I have good starting points with the members of the projects I have worked for but also beyond.
 
-## Software Developer
+## Technical Background and AI
 
-Research software as an equivalent to traditional publications are an upcoming field for which I am advocating in the GI advisory panel I am active in. Software development played a dominant part throughout my academic career and should be valued as such. Being an open source full stack developer whilst being firmly rooted in the academic world is a point to highlight in my profile.
+Over the past three years, I have dedicated myself to the field of computational social sciences. Although this was a detour from my primary focus on learning technologies, this experience allowed me to gain significant expertise in applied machine learning and natural language processing.
+
+Now, I am eager to apply these skills back to the field of learning analytics, where numerous application areas await. For instance, during my PhD, I worked on the COMPBASE project for three years. This project was significantly hindered by the challenge of matching similar learning outcomes—a task that large language models can now handle with ease.
+
+There are many more potential applications for these advanced tools in learning analytics, and I would be thrilled to have the opportunity to return to my original field equipped with these new competencies.
+
+## Networks
+
+I have been a researcher both in the field of educational technologies and in the field of higher education. For the stage in my career I feel well-connected to the respective communities through the GI and the DGHD. For instance, I have been part of the PC for the DELFI the last years, and I graduated from one of the most prominent learning technologies working group.
+
 In terms of academic background and methodological skill I bring an especially broad set of perspectives. To paraphrase one of my mentors: yes, the academic world requires specialization and most permanent positions ask of you to be the best in the field but it is also true that your academic identity is not the lowest common denominator but the union of the fields (education, computer science and political science) you have graduated and worked in.
 
-# Networks
-
-I have been a researcher both in the field of educational technologies and in the field of higher education. For the stage in my career I feel well connected to the respective communities through the GI and the DGHD.
 
 Thank you for your consideration!
+
+
+```{=latex}
+\includepdf[pages=-]{C:/Users/dehnejn/Dropbox/Karriere/Arbeitszeugnisse/arbeitszeugnis_ulrike.pdf}
+```
+

@@ -1,0 +1,17 @@
+\usepackage{pdfpages}
+\includepdfset{pages=-}
+
+% Globally prevent line breaks
+%\setlength{\emergencystretch}{\hsize} % Allow lines to stretch to the full width of the page
+\setlength{\parindent}{0pt} % Remove paragraph indentation
+\setlength{\parskip}{0pt} % Remove paragraph spacing
+
+% no pagenumberings
+\pagenumbering{gobble}
+
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic dummy publisher logo
+
+\usepackage{hyphenat} % don't hyphenat titles
+\usepackage{graphicx}
+
+\hyphenchar\font=-1

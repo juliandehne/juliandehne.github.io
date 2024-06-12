@@ -3,23 +3,23 @@
 
 I am eager to apply for the PostDoc position in digital media and deliberation due to my profound interest, extensive experience over the past three years, and an academic profile uniquely suited to integrating computer methods in the social sciences.
 
-## Relevant Experience in Deliberation Research
-
 Over the last three years I worked in Göttingen with Valentin Gold on a project called "deliberation laboratory". The goal was to develop a chatbot that could interact in social media before discussion escalated and became hateful. Unfortunately, the project funding ran out after we finally established a theoretical basis, a research design and a human-in-the-loop experiment. The reason for the initial slow progress was that the assumptions of social media communication in the proposal did not match the reality at all. However, we now have lift off. Publications are under way, the main study almost culminated, and I would be thrilled to continue the work and bring in all the insights to Zurich. There is substantial material from three years of research that is directly applicable and could be easily transferred.
-
-
-## Genuine Interest in Computational Social Science
 
 My fascination with computational social science began in 2008, during my parallel studies in computer science and political science. At the time, the field of computational social science did not formally exist, but my dual interests naturally converged. While word clouds were popular in political science, I was intrigued by the potential of using language as a data source for measuring political culture. Unfortunately, my early ideas were dismissed by my supervisor as overly positivist. Attending the EPSA conference last year was a revelation; NLP methods now dominate the field, whereas grounding my research in deliberation theory went underappreciated.
 
-## Strong Technical Background
-
 This position demands a robust background in computational social science, NLP, ML, and databases—areas where I excel due to my formal training in computer science. Unlike many social scientists, my technical skills are advanced, and I can effectively communicate complex mathematical concepts, a skill I got from teaching computer science at the high school level. Additionally, my engineering experience is very relevant as research systems grow increasingly complex.
-
-## Team Experience and Networking
 
 It really feels like I have just fully arrived in the CSS community. Currently, I am collaborating with three PhD students on their projects in CSS. But my earlier career in learning analytics consisted of working and communicating in big interdisciplinary teams. Due to my two hats in computer science and political science I was often given the task of translator and moderator. I think that my switching fields puts me in the unique position that I can fulfil a PostDoc position with enough prior experience but also with a fresh motivation and open mind for the field.
 
+In terms of academic background and methodological skill I bring an especially broad set of perspectives. To paraphrase one of my mentors: yes, the academic world requires specialization and most permanent positions
+ask of you to be the best in the field. Still it is also true that your academic identity is not the lowest common denominator but the union of the fields (education, computer science and political science) you have graduated and worked in.
+
 In conclusion, my diverse interests and skills align perfectly with the interdisciplinary nature of this PostDoc position. I would be honored to further discuss my application and explore how I can contribute to your research team in Zurich. Thank you for considering my application.
 
+
+
+```{=latex}
+% TODO change this to Valentins or add both
+\includepdf[pages=-]{C:/Users/dehnejn/Dropbox/Karriere/Arbeitszeugnisse/arbeitszeugnis_ulrike.pdf}
+```
 
