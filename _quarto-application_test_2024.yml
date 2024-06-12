@@ -4,18 +4,15 @@ project:
   output-dir: _application/zurich_2024
 format:
   pdf:
-    documentclass: scrreprt
     # template: application_template.tex
     toc: False
     colorlinks: true
     toc-depth: 2
     bibliography: references.bib
     number-sections: false
+    pdf-engine: lualatex
     template-partials:
-      - title.tex
       - before-body.tex
-      - after-body.tex
-
 
 params:
   application_title: "Application for Postdoc Position (100%) in the Research Group of Professor Karsten Donnay"
@@ -25,12 +22,7 @@ book:
   author: "Julian Dehne"
   chapters:
     - index.qmd
-    - cv_link.qmd
-    - applications/zurich_2024/motivation_letter.qmd
-    - publications.qmd
-    - software.qmd
-    - research.qmd
-    - teaching.qmd
+    - cv.qmd
 
 execute:
   enabled: true

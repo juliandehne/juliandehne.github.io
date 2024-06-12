@@ -16,6 +16,9 @@ format:
       - before-body.tex
       - after-body.tex
 
+params:
+  application_title: "Application for Postdoc Position (100%) in Student-Facing Learning Analytics"
+
 
 book:
   title: "hagen_application"
