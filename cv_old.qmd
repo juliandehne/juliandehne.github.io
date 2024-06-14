@@ -1,11 +1,5 @@
 # Curriculum Vitae
 
-## Personal Information
-- **Name**: Dr. Julian Dehne
-- **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
-- **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
-- **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
-
 ## Education
 - **Doctorate in Educational Technologies**: University of Potsdam, 02.12.2014 - 11.03.2021
 - **M.S. in Computer Science and Political Science**: University of Potsdam, 19.09.2009 - 13.10.2014

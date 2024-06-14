@@ -2,12 +2,14 @@
 ::: {.content-visible when-profile="website"}
 Hi! This is my personal website. Have a look around!
 
-![](img/julian_profile.jpg)
-
 ### Contacts:
-- **Website**:[https://juliandehne.github.io](https://juliandehne.github.io)
 - **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
 - **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
 - **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
 
+
+![](img/julian_profile.jpg)
+
+
 :::
+
