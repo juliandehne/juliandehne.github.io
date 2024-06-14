@@ -24,6 +24,7 @@ book:
   chapters:
     - index.md
     - applications/zurich_2024/motivation_letter.qmd
+    - applications/zurich_2024/reference_contacts.qmd
     - publications.qmd
     - software.qmd
     - research.qmd
