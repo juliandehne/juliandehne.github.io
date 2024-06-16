@@ -56,7 +56,7 @@ Following my PhD, I briefly joined Humboldt University in Berlin, where I co-aut
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Research Software Engeneer", "GESIS - Leibniz Institute for the Social Sciences", "May 2024 - Present",
+    "Research Software Engineer", "GESIS - Leibniz Institute for the Social Sciences", "May 2024 - Present",
     "Transparent Social Analytics, Department of Computational Social Science", c("Development Lead of a project to build an Open Science platform with reusable code and tutorials", "Research on Data Quality Standards", "Implementation of tools to enhance reproducibility and facilitate research with automated quality data checks"),
     "Post Doctoral Researcher", "University of Göttingen", "Aug. 2021 - May 2024",
     "Department of Methods in Social Sciences", c("Research on Deliberation on Social Media", "Constructing Human-In-The-Loop Experiments with Reddit and Twitter, NLP with Python"),
