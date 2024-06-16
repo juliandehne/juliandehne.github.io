@@ -1,15 +1,16 @@
 
 ::: {.content-visible when-profile="website"}
+
 Hi! This is my personal website. Have a look around!
-
-### Contacts:
-- **Email**: [julian.dehne@gmail.com](mailto:julian.dehne@gmail.com)
-- **Website**: [ResearchGate Profile](https://www.researchgate.net/profile/Julian-Dehne)
-- **Orcid**: [0000-0001-9265-9619](https://orcid.org/0000-0001-9265-9619)
-
 
 ![](img/julian_profile.jpg)
 
+:::
+
+::: {.content-visible unless-profile="website"}
+```{=latex}
+\includepdf[pages=-]{_site/CV.pdf}
+```
 
 :::
 

@@ -23,7 +23,7 @@ book:
   title: "Application for a Postdoc Position (100%) in Student-Facing Learning Analytics"
   # page-navigation: false
   chapters:
-    - index.md
+    - index.qmd
     #- cv_link.qmd
     - applications/hagen_2024/motivation_letter.qmd
     - publications.qmd
