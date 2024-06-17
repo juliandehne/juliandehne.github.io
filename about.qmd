@@ -1,5 +1,18 @@
 ---
-title: "About"
+title: "About Me"
 ---
 
-About this site
+## Education
+
+After completing a BA in European Studies at the University of Passau, I sought to enhance my background with expertise in Computer Science. The dual subject teacher program in Brandenburg and Berlin uniquely offered a combination of Political Science and Computer Science, which aligned perfectly with my interests. In Potsdam, I later received my PhD in the field of learning technologies.
+
+## Work
+
+Following my PhD, I briefly joined Humboldt University in Berlin, where I co-authored one of the first conceptual papers on fostering creativity through e-learning. Subsequently, I decided to return to the social sciences, accepting a PostDoc position at the University of Göttingen in the CSS field. Here, our team has been developing an innovative chatbot designed to facilitate deliberation on social media, which is nearing operational functionality.
+
+# Hobbies
+
+- Music: if I am in Berlin I play clarinet with my old band called DUrlaub
+- Gaming: Chess, Dota, Board Games
+- Sports: Ski/Snowboard, Swimming
+- Writing: [Outdated Blog](https://uzuzjmd.blogspot.com/), some random unfinished book projects

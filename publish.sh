@@ -1,1 +1,1 @@
-quarto publish gh-pages
+quarto publish gh-pages --profile website

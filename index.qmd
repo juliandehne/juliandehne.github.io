@@ -1,9 +1,32 @@
 
 ::: {.content-visible when-profile="website"}
 
-Hi! This is my personal website. Have a look around!
+
+::: {.grid}
+
+::: {.g-col-6}
 
 ![](img/julian_profile.jpg)
+
+:::
+
+::: {.g-col-6}
+
+
+
+# Dr. Julian Dehne
+
+I am a researcher in the field of learning technologies and computational social sciences. I have also worked as
+a research software engineer.
+
+- [My Publications](publications.qmd)
+- [My Courses](teaching.qmd)
+- [My Software](software.qmd)
+
+To get more detailed information about me, please go to the [About Me](about.qmd) page.
+
+
+:::
 
 :::
 

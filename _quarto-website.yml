@@ -24,13 +24,13 @@ website:
         href: research.qmd
       - text: "Teaching"
         href: teaching.qmd
-      - text: "Other"
-        href: private.qmd
+      - text: "About Me"
+        href: about.qmd
 
 format:
   html:
+    theme: lux
     css: styles.css
-
 
 execute:
   enabled: true
