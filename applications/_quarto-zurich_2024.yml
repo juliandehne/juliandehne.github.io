@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: _application/zurich_2024
+  output-dir: ../_application/zurich_2024
 
 format:
   pdf:
@@ -9,7 +9,7 @@ format:
     toc: False
     colorlinks: true
     toc-depth: 2
-    bibliography: references.bib
+    bibliography: ../references.bib
     number-sections: false
     template-partials:
       - before-body.tex
@@ -22,12 +22,12 @@ format:
 book:
   title: "Application for Postdoc Position (100%) in the Research Group of Professor Karsten Donnay"
   chapters:
-    - index.qmd
-    - applications/zurich_2024/motivation_letter.qmd
-    - applications/zurich_2024/reference_contacts.qmd
-    - publications.qmd
-    - software.qmd
-    - research.qmd
-    - teaching.qmd
+    - index.md
+    - zurich_2024/motivation_letter.qmd
+    - zurich_2024/reference_contacts.qmd
+    - ../publications.qmd
+    - ../software.qmd
+    - ../research.qmd
+    - ../teaching.qmd
 
 

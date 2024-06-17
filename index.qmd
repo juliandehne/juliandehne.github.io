@@ -1,8 +1,6 @@
-
-::: {.content-visible when-profile="website"}
-
-
 ::: {.grid}
+
+**Dr. Julian Dehne**
 
 ::: {.g-col-6}
 
@@ -12,10 +10,6 @@
 
 ::: {.g-col-6}
 
-
-
-# Dr. Julian Dehne
-
 I am a researcher in the field of learning technologies and computational social sciences. I have also worked as
 a research software engineer.
 
@@ -24,16 +18,6 @@ a research software engineer.
 - [My Software](software.qmd)
 
 To get more detailed information about me, please go to the [About Me](about.qmd) page.
-
-
-:::
+Follow me on Twitter: [@DehneJulian](https://twitter.com/DehneJulian)
 
 :::
-
-::: {.content-visible unless-profile="website"}
-```{=latex}
-\includepdf[pages=-]{_site/CV.pdf}
-```
-
-:::
-
