@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTasksOptions">
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="render --profile website" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
@@ -22,13 +22,13 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="false">
-      <option name="arguments" value="render --profile application_zurich_2024" />
+      <option name="arguments" value="render --profile zurich_2024" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="Qmd" />
       <option name="immediateSync" value="true" />
-      <option name="name" value="render pdf" />
+      <option name="name" value="render zurich pdf" />
       <option name="output" value="C:\Users\dehnejn\IdeaProjects\juliandehne.github.io\_application\zurich_2024" />
       <option name="outputFilters">
         <array />
@@ -38,7 +38,27 @@
       <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="false" />
-      <option name="workingDir" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/applications" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="render --profile hagen_2024" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="Qmd" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="render hagen pdf" />
+      <option name="output" value="C:\Users\dehnejn\IdeaProjects\juliandehne.github.io\_application\hagen_2024" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="quarto" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="Project Files" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$PROJECT_DIR$/applications" />
       <envs />
     </TaskOptions>
   </component>

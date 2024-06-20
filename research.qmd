@@ -13,11 +13,12 @@ Alas, I have two scientific profiles (one too many). And I have written more sof
 - Self Left-Right Placements and Ideological Embeddings
 
 ## Learning Technologies Profile
-- Educational technologies
-- Algorithms in the educational sector
-- Modeling of learning processes
-- Learning analytics and creativity research
-- Higher education didactics
+- Educational Technologies
+- Group Formation Algorithms
+- Peer Assessment Algorithms
+- Modeling of Learning Processes
+- Learning Analytics and Creativity
+- Higher Education Didactics
 - Curriculum research
 
 ## Dissertation

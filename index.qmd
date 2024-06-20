@@ -1,7 +1,5 @@
 ::: {.grid}
 
-**Dr. Julian Dehne**
-
 ::: {.g-col-6}
 
 ![](img/julian_profile.jpg)
@@ -9,6 +7,8 @@
 :::
 
 ::: {.g-col-6}
+
+# Dr. Julian Dehne
 
 I am a researcher in the field of learning technologies and computational social sciences. I have also worked as
 a research software engineer.

@@ -16,7 +16,7 @@ website:
         href: cv.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Laudate"
+      - text: "Academic Progress"
         href: achievements.qmd
       - text: "Software"
         href: software.qmd
