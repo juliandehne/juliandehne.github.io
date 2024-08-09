@@ -1,3 +1,6 @@
 [submodule "applications"]
 	path = applications
 	url = https://github.com/juliandehne/applications
+[submodule "publications"]
+	path = publications
+	url = git@github.com:juliandehne/publications.git
