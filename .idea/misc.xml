@@ -66,6 +66,13 @@
             </RMarkdownRenderProfile>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/applications/potsdam_2024/research_plan.qmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/applications/potsdam_2024" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/applications/zurich_2024/frontmatter.qmd">
           <value>
             <RMarkdownRenderProfile>
@@ -203,6 +210,13 @@
           <value>
             <RMarkdownRenderProfile>
               <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/publications/pub_ele_roleplays/ed_tech_journals.qmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/publications/pub_ele_roleplays" />
             </RMarkdownRenderProfile>
           </value>
         </entry>
