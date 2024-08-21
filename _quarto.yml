@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: _site
   title: Julian Dehne
+  render:
+    - "*.qmd"
 
 website:
   title: "Julian Dehne"
@@ -20,8 +22,6 @@ website:
         href: achievements.qmd
       - text: "Software"
         href: software.qmd
-      - text: "Research Profile"
-        href: research.qmd
       - text: "Teaching"
         href: teaching.qmd
       - text: "About Me"
