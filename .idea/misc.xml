@@ -4,7 +4,7 @@
     <option name="sdkName" value="Python 3.11 (sem_rep_left-right)" />
   </component>
   <component name="JsBuildToolPackageJson" sorting="DEFINITION_ORDER" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="Python 3.11 (sem_rep_left-right)" project-jdk-type="Python SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="Python 3.9 (delab-trees)" project-jdk-type="Python SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="RMarkdownSettings">
