@@ -43,9 +43,11 @@ cvevents <- function(tbl, when, what, where, details) {
 # Summary
 
 
-After completing a BA in European Studies at the University of Passau, I sought to enhance my background with expertise in Computer Science. The dual subject teacher program in Brandenburg and Berlin uniquely offered a combination of Political Science and Computer Science, which aligned perfectly with my interests. In Potsdam, I later received my PhD in the field of learning technologies.
+I am a Researcher and Engineer at GESIS - Leibniz Institute for the Social Sciences, with a strong background in developing open science platforms, research software, and tools to enhance reproducibility and data quality in social sciences. My current role involves leading a software project to create an Open Science platform with reusable code and tutorials, alongside conducting research on data quality standards and implementing automated tools for quality data checks.
 
-Following my PhD, I briefly joined Humboldt University in Berlin, where I co-authored one of the first conceptual papers on fostering creativity through e-learning. Subsequently, I decided to return to the social sciences, accepting a PostDoc position at the University of Göttingen in the CSS field. Here, our team has been developing an innovative chatbot designed to facilitate deliberation on social media, which is nearing operational functionality.
+Previously, I worked as a Postdoctoral Researcher at the University of Göttingen, focusing on social media deliberation, conducting human-in-the-loop experiments with platforms like Reddit and Twitter, and applying NLP techniques in Python. At Humboldt University Berlin, I researched text-based creativity detection using machine learning and analyzed large datasets from E-learning platforms.
+
+I completed my Ph.D. at the University of Potsdam, where I developed methods for group formation, built a semantic database of learning goals, and created a framework for inquiry-based learning and evaluation methodologies for E-learning. My expertise spans natural language processing, machine learning, data quality, and educational technologies.
 
 
 # Experience
@@ -59,12 +61,13 @@ tibble::tribble(
     "Research Software Engineer", "GESIS - Leibniz Institute for the Social Sciences", "May 2024 - Present",
     "Transparent Social Analytics, Department of Computational Social Science", c("Development Lead of a project to build an Open Science platform with reusable code and tutorials", "Research on Data Quality Standards", "Implementation of tools to enhance reproducibility and facilitate research with automated quality data checks"),
     "Post Doctoral Researcher", "University of Göttingen", "Aug. 2021 - May 2024",
-    "Department of Methods in Social Sciences", c("Research on Deliberation on Social Media", "Constructing Human-In-The-Loop Experiments with Reddit and Twitter, NLP with Python"),
-    "Post Doctoral Researcher", "Humboldt University Berlin", "Apr. 2020 - Feb. 2021", "Chair of Learning Technologies", c("Developing new methods to detect creativity in texts", "Machine Learning", "Gathering and analyzing large datsets from E-learning Platforms"),
-    "Ph.D. Candidate", "University of Potsdam", "Oct. 2012 - Oct. 2020", "Chair of Complex Computational Media Applications", c("Developing new methods to support Group Formation", "Developing Sementic Database of Learning Goals", "Developing a Framework for Inquiry Based Learning", "Developing a methodology for the Evaluation of E-Learning")
+    "Department of Methods in Social Sciences", c("Substitute Project Coordination","Development Lead  of the Delab-Framework", "Research on Deliberation on Social Media", "Constructing Human-In-The-Loop Experiments with Reddit and Twitter, NLP with Python"),
+    "Post Doctoral Researcher", "Humboldt University Berlin", "Apr. 2020 - Feb. 2021", "Chair of Learning Technologies", c("Developing new methods to detect creativity in texts", "Gathering and analyzing large datsets from E-learning Platforms"),
+    "Ph.D. Candidate", "University of Potsdam", "Oct. 2014 - Oct. 2020", "Chair of Complex Computational Media Applications", c("Lead Developer of a Framework for Inquiry Based Learning", "Developing Algorithms to support Group Formation", "Construction of a Semantic Database of Learning Goals", "Developing a Methodology for the Evaluation of E-Learning", "Co-Write Project Proposals and Reports", "Active Member of the GI Junior Researcher Group")
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
 ```
+\newpage
 
 # Education
 
@@ -73,9 +76,9 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Computer Science", "University of Potsdam", "Potsdam, Germany", "Nov. 2012 - Sep. 2020", c("Thesis: Possibilities and Limitations of Media Support for Inquiry-Based Learning", "Explores the use of computer technology to support inquiry-based learning in higher education"),
-    "BA and MA in Computer Science, Political Science and Education", "University of Potsdam", "Potsdam, Germany", "Sep. 2009 - Okt. 2014", c("Thesis: An Intelligent Competence Database", "Implementation and Evaluation of a Learning Outcome Storage connected to Portfolio Learning"),
-    "BA in European Studies", "University of Passau", "Passau, Germany", "April. 2007 - Okt. 2009", c("Thesis: Innenpolitische Bedingtheit europäischer Migrationspolitik", "Studying the Multilevel European System and how the Regions influenced the Amsterdam Treaty")
+    "Ph.D. in Computer Science", "University of Potsdam", "Potsdam, Germany", "Nov. 2014 - Sep. 2020", c("Thesis: Possibilities and Limitations of Media Support for Inquiry-Based Learning", "Explores the use of computer technology to support inquiry-based learning in higher education"),
+    "BA and MA in Computer Science, Political Science and Education", "University of Potsdam", "Potsdam, Germany", "Okt. 2009 - Okt. 2014", c("Thesis: An Intelligent Competence Database", "Implementation and Evaluation of a Learning Outcome Storage connected to Portfolio Learning"),
+    "BA in European Studies", "University of Passau", "Passau, Germany", "April. 2007 - Sep. 2009", c("Thesis: Innenpolitische Bedingtheit europäischer Migrationspolitik", "Studying the Multilevel European System and how the Regions influenced the Amsterdam Treaty")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 ```
