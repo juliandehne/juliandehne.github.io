@@ -1,6 +1,6 @@
 ---
 author: Julian Dehne
-title: Expert in Learning Technologies and CSS
+title: Learning Technologies and Computational Social Sciences
 format:
   classic-cv-pdf: default
 cvfooter:
@@ -47,7 +47,7 @@ I am a Researcher and Engineer at GESIS - Leibniz Institute for the Social Scien
 
 Previously, I worked as a Postdoctoral Researcher at the University of Göttingen, focusing on social media deliberation, conducting human-in-the-loop experiments with platforms like Reddit and Twitter, and applying NLP techniques in Python. At Humboldt University Berlin, I researched text-based creativity detection using machine learning and analyzed large datasets from E-learning platforms.
 
-I completed my Ph.D. at the University of Potsdam, where I developed methods for group formation, built a semantic database of learning goals, and created a framework for inquiry-based learning and evaluation methodologies for E-learning. My expertise spans natural language processing, machine learning, data quality, and educational technologies.
+I completed my Ph.D. at the University of Potsdam, where I developed methods for group formation, built a semantic database of learning goals, and created a framework for inquiry-based learning and evaluation methodologies for learning technologies. My expertise spans natural language processing, machine learning, data quality, and educational technologies.
 
 
 # Experience

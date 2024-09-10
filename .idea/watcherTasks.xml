@@ -61,7 +61,7 @@
       <option name="workingDir" value="$PROJECT_DIR$/applications" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="false">
+    <TaskOptions isEnabled="true">
       <option name="arguments" value="render --no-cache --profile potsdam_web_2024" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
@@ -81,7 +81,7 @@
       <option name="workingDir" value="$PROJECT_DIR$/applications" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="render --profile potsdam_2024" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
