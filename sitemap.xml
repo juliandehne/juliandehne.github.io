@@ -1,59 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://juliandehne.github.io/trajectory.html</loc>
-    <lastmod>2024-06-07T08:39:31.681Z</lastmod>
+    <loc>https://juliandehne.github.io/publications/pub_delab_quant/materials.html</loc>
+    <lastmod>2024-08-09T07:02:02.460Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/software.html</loc>
-    <lastmod>2024-06-18T18:25:51.430Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/publications.html</loc>
-    <lastmod>2024-06-18T18:26:53.504Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/index.html</loc>
-    <lastmod>2024-06-17T15:22:47.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/applications/zurich_2024/motivation_letter.html</loc>
-    <lastmod>2024-06-18T18:16:21.119Z</lastmod>
+    <loc>https://juliandehne.github.io/applications/potsdam_2024/research_plan.html</loc>
+    <lastmod>2024-09-10T09:13:10.245Z</lastmod>
   </url>
   <url>
     <loc>https://juliandehne.github.io/applications/hagen_2024/motivation_letter.html</loc>
-    <lastmod>2024-06-18T19:15:06.601Z</lastmod>
+    <lastmod>2024-09-03T08:38:33.792Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/about.html</loc>
-    <lastmod>2024-06-17T06:33:00.685Z</lastmod>
+    <loc>https://juliandehne.github.io/publications/pub_delab_patterns/index.html</loc>
+    <lastmod>2024-08-09T07:02:02.435Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/achievements.html</loc>
-    <lastmod>2024-06-20T09:22:25.308Z</lastmod>
+    <loc>https://juliandehne.github.io/publications/pre_delab/2024-04-15_maastricht/presentation/delab.html</loc>
+    <lastmod>2024-08-09T07:02:02.310Z</lastmod>
   </url>
   <url>
-    <loc>https://juliandehne.github.io/applications/index.html</loc>
-    <lastmod>2024-06-17T14:44:51.653Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/applications/zurich_2024/reference_contacts.html</loc>
-    <lastmod>2024-06-18T18:19:33.276Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/cv_old.html</loc>
-    <lastmod>2024-06-12T16:20:06.823Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliandehne.github.io/private.html</loc>
-    <lastmod>2024-06-10T06:40:54.816Z</lastmod>
+    <loc>https://juliandehne.github.io/trajectory.html</loc>
+    <lastmod>2024-06-07T08:39:31.681Z</lastmod>
   </url>
   <url>
     <loc>https://juliandehne.github.io/research.html</loc>
     <lastmod>2024-06-18T18:31:23.996Z</lastmod>
   </url>
   <url>
+    <loc>https://juliandehne.github.io/publications/pub_ele_roleplays/ed_tech_journals.html</loc>
+    <lastmod>2024-08-12T11:12:57.034Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/pc_reviews/CPSS_2024.html</loc>
+    <lastmod>2024-08-09T07:02:02.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/boo_ele_methodology/learning_is_a_process.html</loc>
+    <lastmod>2024-08-09T07:02:02.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications.html</loc>
+    <lastmod>2024-09-10T09:15:14.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/index.html</loc>
+    <lastmod>2024-08-19T09:39:44.558Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/zurich_2024/reference_contacts.html</loc>
+    <lastmod>2024-06-21T13:07:15.632Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/potsdam_2024/ai_usage.html</loc>
+    <lastmod>2024-09-05T08:47:58.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/funded_projects.html</loc>
+    <lastmod>2024-09-05T10:43:26.625Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/berlin_2024/professional_output.html</loc>
+    <lastmod>2024-09-03T09:20:25.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/achievements.html</loc>
+    <lastmod>2024-06-20T09:22:25.308Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/berlin_2024/cover_letter.html</loc>
+    <lastmod>2024-09-03T09:27:15.275Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/frankfurt_2024/cover_letter.html</loc>
+    <lastmod>2024-07-04T20:25:30.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/medical.html</loc>
+    <lastmod>2024-09-03T09:23:03.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/potsdam_2024/experts.html</loc>
+    <lastmod>2024-09-09T10:51:46.881Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/cv_old.html</loc>
+    <lastmod>2024-07-04T20:31:15.309Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/private.html</loc>
+    <lastmod>2024-06-10T06:40:54.816Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/boo_ele_methodology/index.html</loc>
+    <lastmod>2024-08-09T07:02:02.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/metadata.html</loc>
+    <lastmod>2024-08-09T07:02:02.307Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/pc_reviews/review_template.html</loc>
+    <lastmod>2024-08-09T07:02:02.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/pub_ele_roleplays/idea.html</loc>
+    <lastmod>2024-08-09T07:02:02.470Z</lastmod>
+  </url>
+  <url>
     <loc>https://juliandehne.github.io/teaching.html</loc>
     <lastmod>2024-06-12T13:46:22.446Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/about.html</loc>
+    <lastmod>2024-06-17T06:33:00.685Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/pre_gesis/2024-07-04_goe/index.html</loc>
+    <lastmod>2024-08-09T07:02:02.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/wor_gesis/2024-07-09/index.html</loc>
+    <lastmod>2024-08-09T07:02:02.474Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/software.html</loc>
+    <lastmod>2024-06-18T18:25:51.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/frankfurt_2024/three_publications/index.html</loc>
+    <lastmod>2024-07-04T19:49:04.838Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/applications/zurich_2024/motivation_letter.html</loc>
+    <lastmod>2024-06-21T13:07:15.631Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/pub_delab_quant/index.html</loc>
+    <lastmod>2024-08-09T07:02:02.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliandehne.github.io/publications/boo_ele_methodology/research documentation.html</loc>
+    <lastmod>2024-08-09T07:02:02.305Z</lastmod>
   </url>
 </urlset>

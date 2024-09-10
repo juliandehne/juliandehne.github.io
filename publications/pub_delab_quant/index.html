@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Julian Dehne">
+<meta name="keywords" content="deliberation; moderation; social media; Twitter; conversation quality">
+
+<title>Julian Dehne – Comparing the Effectiveness of Different User Moderation Strategies for Deliberation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Julian Dehne</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv_old.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.pdf"> 
+<span class="menu-text">CV Download</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../achievements.html"> 
+<span class="menu-text">Academic Progress</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About Me</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Comparing the Effectiveness of Different User Moderation Strategies for Deliberation</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://www.researchgate.net/profile/Julian-Dehne">Julian Dehne</a> <a href="mailto:julian.dehne@gesis.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0001-9265-9619" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            GESIS, Leibniz-Institut für Sozialwissenschaften
+          </p>
+        <p class="affiliation">
+            University of Göttingen
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    This paper analyzes deliberative user moderation in social media. Using phrases to sample moderating statements from ordinary users a corpus of user moderation on Twitter was created. Using this corpus, the intended effect of user moderation on subsequent online discussions is analyzed on a large scale using computational methods. A small but systematic effect can be observed which was interpreted based on the intended function of the user’s intervention and general concepts of deliberative quality.
+  </div>
+</div>
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>deliberation; moderation; social media; Twitter; conversation quality</p>
+  </div>
+</div>
+
+</header>
+
+
+<p>In the contemporary digital landscape, social media platforms are increasingly at risk of losing their capacity for productive deliberation, owing to the prevalence of automated trolls, the strategic dissemination of misinformation, and the pervasive influence of marketing interests, which often overshadow empirical scientific evidence and ethically grounded values. It is therefore crucial to identify and implement proactive strategies that bolster the quality of deliberation on social media platforms.</p>
+<p>Extant research has explored various approaches to enhance the deliberative quality within these digital forums. These methods range from assigning responsibility to the social media platforms themselves or to the judicial legal system to approaches that penalize the users directly on the platform. Although each of these methods contributes to the enhancement of deliberative quality, it is essential to recognize that ultimately, the discourse is driven not by the platforms but by their users.</p>
+<p>The dynamic of user engagement in upholding deliberative standards shows a dichotomy. On one hand, there is evidence indicating that users often assume responsibility proactively. On the other hand, the efficacy of such user-driven interventions in improving deliberative quality appears contingent on specific conditions. One key variable is the scale of user engagement. While existing literature, such as the work of <span class="citation" data-cites="friess2021collective">[@friess2021collective]</span>, points to the positive impact of collective civic interventions — where groups of users are organized collectively — less is known about the influence of ordinary users moderating discussions on social media.</p>
+<p>In this paper, we conduct a large-scale analysis of Twitter/X<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> tweets with the question of how users react to attempts of moderation by other users and which moderation strategies work best for that purpose. First, based on previous empirical and theoretical studies, we derive a model for deliberative moderation. Then a phrase-based sampling approach is employed to identify instances of user moderation online and classify them into different strategies of deliberative moderation. Furthermore, the reaction patterns of different author compositions are analyzed as well as the impact the different strategies have in terms of their intended effect and on deliberative quality.</p>
+<p>The assumption being investigated in this paper is that user moderation leads to patterns of reactions that can be categorized as deliberative (or not) depending on the type of intervention. As a consequence, the deliberative quality of the communication should increase.</p>
+<section id="moderation-and-deliberation" class="level2">
+<h2 class="anchored" data-anchor-id="moderation-and-deliberation">Moderation and Deliberation</h2>
+<p>Moderation constitutes a specific type of deliberative communication: building on the previous turns, it adds another layer to the discussion. Moderation shifts the focus away from the actual content to the metalevel of communication. The link to the actual content might vary widely: while some moderators refer to the content of the previous turns directly, e.g., by integrating and combining lines of argumentation, others only focus on the metalevel, for instance by asking participants to be more friendly in their communication. Researchers conclude that metacommunication (e.g., talking about the tone of the discussion) engenders more metacommunication and is usually caused by an uncivil discussion <span class="citation" data-cites="han2018civility">[@han2018civility, 1]</span>. However, metacommunication does not significantly decrease incivility, but leads to more metacommunication, according to . Moderating behavior is mainly researched as part of a bundle of reactions to uncivil behavior rather than as a proactive force. It is still uncertain whether moderation shares the same preconditions and effects as metacommunication in general, or if individual characteristics can be observed.</p>
+<p>In principle, as shown by <span class="citation" data-cites="wohn2019volunteer">@wohn2019volunteer</span>, moderators in Twitch communities, can assume different roles. These roles include Helping hands, Justice Enforcers, Surveillance Units, and Conversationalists. <span class="citation" data-cites="cai2019effective">@cai2019effective</span> identify five approaches that moderators may take to dealing with problematic behaviors: Educating, Sympathizing, Shaming, Humor, and Blocking. <span class="citation" data-cites="kraut2012building">@kraut2012building</span> outline five key difficulties that community leaders encounter: Encouraging Contribution; Encouraging Commitment; Regulating Behavior; Dealing with Newcomers; and Starting New Communities. However, <span class="citation" data-cites="seering2020reconsidering">@seering2020reconsidering</span> concludes that the effectiveness of moderation cannot be defined universally. <span class="citation" data-cites="molina2018role">@molina2018role</span> hypothesize that comments condemning the incivility of other commenters would result in more civil comments and a decrease in uncivil comments. However, their findings did not yield significant results to support these hypotheses. Although they did not observe a significant impact of metacommunication on the overall civility level, which would have indicated the participants’ ability to independently change the tone of a conversation without relying on moderators, they found evidence of metacommunication being practiced. This suggests that commenters positively responded to individuals attempting to intervene and denounce incivility.</p>
+<p>Going beyond the previous approaches, <span class="citation" data-cites="friess2021collective">@friess2021collective</span> analyze the effect of civic moderation concerning the variables rationality, constructiveness, respect, and reciprocity. Although all these are important for deliberation, they are only a subset targeting incivility, and thus missing other important process-oriented aspects like understanding, sincerity, equality, and freedom (<span class="citation" data-cites="graham2003search">@graham2003search</span>), or justification (<span class="citation" data-cites="monnoyer2012technology">@monnoyer2012technology</span>). It should also be noted that <span class="citation" data-cites="friess2021collective">@friess2021collective</span> are looking at a specialized user group selected by their organizational goal of improving social media instead of ordinary users focused on in this study. In general, <span class="citation" data-cites="friess2021collective">@friess2021collective</span> show that targeted counter-speech has a moderating effect on uncivil speech.</p>
+</section>
+<section id="types-of-deliberative-user-moderation" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-deliberative-user-moderation">Types of Deliberative User Moderation</h2>
+<p>To measure the effect of user moderation, we first need to derive a framework for deliberative moderation. So far, moderation has only been used to explain the effects on deliberative quality, but we’re not aware of any theoretical framework situating moderation within the theory of deliberative communication.</p>
+<section id="theoretical-framework" class="level3">
+<h3 class="anchored" data-anchor-id="theoretical-framework">Theoretical Framework</h3>
+<p>Drawing on political philosophy and psychological research on moderation and mediation, a framework is developed that situates moderation between the deliberative function and its practice in social media. Moderation is then operationalized as a set of strategies and expressions of strategies so that it can be found and labeled in social media. Finally, a discourse-analytical framework is imported from qualitative social sciences to categorize the effect moderation has in terms of discourse component patterns. These can be interpreted as social scripts or simply as patterns of reaction to moderation. Moderation and deliberation are two concepts that can be closely linked. In the context of this study, social media is viewed from the perspective of how online communication may foster the exchange of views and arguments, and improve or worsen the social bonds that hold together democratic societies.</p>
+<p>Moderation, as an essential component of deliberation, plays a vital role in fostering constructive and inclusive discussions. Deliberation, at its core, is the process of exchanging ideas, perspectives, and opinions to reach informed decisions. According to <span class="citation" data-cites="stromer2007measuring">@stromer2007measuring</span>, deliberation is defined [. . .] as a process whereby groups of people, often ordinary citizens, engage in reasoned opinion on a social or political issue to identify solutions to a common problem and evaluate those solutions.</p>
+<p>Moderation is understood beyond just deletion or flagging <span class="citation" data-cites="friess2021collective">[@friess2021collective]</span>; it encompasses strategies used by participants to guide conversations constructively. This approach considers real-life deliberation, where speech acts cannot be erased, emphasizing comments that aim to rationalize discussions rather than censor them. In general, moderation is defined as a governance mechanism that structures community participation, fostering cooperation and preventing abuse, as per <span class="citation" data-cites="grimmelmann2015virtues">[@grimmelmann2015virtues]</span>. <span class="citation" data-cites="edwards2002moderator">@edwards2002moderator</span> breaks down its function into three aspects: strategic, conditioning, and process. The strategic function sets the discussion’s boundaries within the community’s context, the conditioning function establishes rules and guidelines, and the process function involves managing the discussion by facilitating dialogue and mediating conflicts. <span class="citation" data-cites="friess2021collective">@friess2021collective</span> distinguish between different types of moderators - professional, user, and ordinary users who occasionally moderate. Ordinary users’ moderation blends with their general communication and personal agenda <span class="citation" data-cites="mutz2008deliberative">[@mutz2008deliberative]</span>, differing from user or professional moderators who enforce pre-set norms. Taking the above functions into consideration, five moderation functions for user moderation in social media were distilled. <a href="#fig-mod_concept_small" class="quarto-xref">Figure&nbsp;1</a> summarizes the resulting moderation strategy framework.</p>
+<div id="fig-mod_concept_small" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mod_concept_small-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/mod_concept_small.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mod_concept_small-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Deliberative Moderation Framework
+</figcaption>
+</figure>
+</div>
+<p>The following gives a short intuition on why these moderation strategies in <a href="#fig-mod_concept_small" class="quarto-xref">Figure&nbsp;1</a> might be relevant to foster deliberative quality and also illuminates their basis in the literature. An in-depth discussion is outside the scope of this paper. On the one hand, “Tone Policing” and “Invoking Social Norms” are popular aspects in current research dealing with the effect on the deliberative quality of various independent variables such as incivility, rationality, affective polarization, and emotions. On the other hand, “Agenda Control”, “Engaging Participation”, and “Consensus-Seeking support” derive directly from the ideals of deliberative democracy. These will be grounded in Habermasian theory directly.</p>
+<p>Agenda Control focuses on organizing the spread of topics within the discussion to improve consistency and understanding <span class="citation" data-cites="graham2003search">[@graham2003search]</span>. Tone Policing aims to maintain a respectful and constructive atmosphere, encouraging understanding and compromise among participants. Keeping a cool head is commonly included in the literature, with it acting both as a proxy for rationality and civility <span class="citation" data-cites="papacharissi2004democracy">[@papacharissi2004democracy]</span>. Although other lines of investigation exist that include anger <span class="citation" data-cites="kim2016beyond">[@kim2016beyond]</span> or moral indignation <span class="citation" data-cites="hwang2018influence">[@hwang2018influence]</span>, the political science literature has mainly focused on rationality. With the approach of starting with the intent (or function) of the moderation, it is only logical to stick with the assumption of issue focus over emotions or relationships. Invoking Social Norms involves reminding participants of community guidelines to foster a harmonious environment <span class="citation" data-cites="cialdini2004social">[@cialdini2004social]</span>.</p>
+<p>Engaging Participation, and Consensus-seeking support: The strategies “Engaging Participation” and “Consensus-seeking support” were derived from the Habermasian ideal of deliberation: A conversation is a discourse if and only if a rationally motivated consensus could be achieved assuming that the arguments can be put forward as often as necessary and for as long as necessary (adapted and translated by the authors) <span class="citation" data-cites="habermas1981theorie">[@habermas1981theorie, p.71]</span>. Consensus-seeking strategies involve summarizing key points and promoting nuanced views to reach a shared understanding and a motivated consensus. In contrast to the concept of the public sphere, this communicative idea fits perfectly with the conversations held on Twitter as they do not impose any restrictions as to how often arguments are presented. Contrary to live debates they are not dependent on the physical conditions of humans becoming fatigued and can stretch time indefinitely assuming the platform stays online and the attention does not waver. The first part of the definition introduces consensus as a criterion. The following citation links the consensus building to the single participants, displaying Habermas’ efforts to integrate systems theory with symbolic interactionism and Durkheim’s theory of solidarity: a discursive consensus depends at the same time on the yes and the no of each single participants, and it depends on surpassing egocentrism. (translated by the authors) <span class="citation" data-cites="habermas2009diskursethik">[@habermas2009diskursethik, p.19]</span>. Engaging participation broadens the discussion by incorporating diverse perspectives, especially important in social media where attention mechanisms might limit exposure.</p>
+<p>In summary, a process-oriented Habermasian concept of deliberation is used in this paper, which assumes that some sort of rational discussion is possible and that the goal of deliberative moderation is to move the discussion closer to the ideal of a calm, focused, argument-based, and consensus-oriented discussion. The framework covers low-key interventions like invoking basic norms of politeness up to higher-level functions that are more likely associated with an academic panel discussion. The advantage of this approach is that it does not require a definition of deliberative quality <span class="citation" data-cites="steenbergen2003measuring">[@steenbergen2003measuring]</span> which has been strongly criticized <span class="citation" data-cites="bachtiger2019unpacking">[@bachtiger2019unpacking, p.50]</span>.</p>
+</section>
+<section id="empirical-framework" class="level3">
+<h3 class="anchored" data-anchor-id="empirical-framework">Empirical Framework</h3>
+<p>Our applied approach derives from a dictionary of phrases that are most likely used when moderators intervene in a conversation. For each of the five moderation strategies and based on the predefined theoretical grounds of moderation, we employ a set of terms and phrases to determine moderation. Based on this deductive approach, we have deduced around 70 moderation phrases in both English and German.</p>
+<p>Still, the most important challenge is contextual ambiguity: A phrase that is used to moderate can also be used in a different context – the meaning changes. As an example, let’s think about the phrase “calm down”:</p>
+<ul>
+<li>If the phrase is used in a sentence like “Please calm down. No need to get nasty.”, it serves the moderation function.</li>
+<li>If, however, the sentence reads “The public needs to calm down.”, the meaning of the phrase differs.</li>
+</ul>
+<p>There is one obvious solution to solve contextual ambiguity: we could just derive more specific phrases, e.g.&nbsp;“Please calm down”. But in this case, we would miss the sentence “Calm down! No need to get nasty.” Hence, for our set of phrases, we need to balance generalizability and specificity.</p>
+<p>On the one hand, the phrases should precisely define moderation – which speaks towards deriving phrases that are specific to certain tweets. On the other hand, the phrases should show general applicability. If we apply too general phrases, we would end with many false positives; in the opposite case of too specific phrases, we miss many moderation tweets (false negatives). In other words: the search query is a function of the length of the phrases.</p>
+<p>To arrive at a balanced set of phrases, we labeled moderation instances based on a judgment made by three annotators. Due to vast amounts of data – we just cannot manually label thousands (or even millions) of potential moderation candidates – we chose to manually label 1,500 tweets.</p>
+<ol type="1">
+<li>In the first step, we downloaded conversations that included one of the 70 moderation phrases.</li>
+<li>In the second step, the three annotators had to judge whether a given tweet entails moderation. To provide some context, the annotators were given the root tweet, the two preceding tweets, the post containing the queried phrase as well as the two following tweets.</li>
+</ol>
+<p>Overall, the inter-annotator agreement varies widely. While for some terms and phrases, no agreement could be made whether this tweet contains moderation, others show a high inter-annotator agreement of about 0.95 <span class="citation" data-cites="krippendorff2004reliability">[@krippendorff2004reliability]</span>.</p>
+<p>We then query those phrases at a large scale that show both a high inter-annotator agreement as well as a high precision for moderation. Using this procedure, we end up with seven phrases belonging to the strategies of tone policing, engaging participation, and agenda control.</p>
+<p>The three German phrases are:</p>
+<ul>
+<li>“entspann dich” (calm down)</li>
+<li>“näher erläutern” (elaborate further)</li>
+<li>“bleib beim thema” (stick to topic)</li>
+</ul>
+<p>The English phrases are:</p>
+<ul>
+<li>“back to topic”</li>
+<li>“back to the topic”</li>
+<li>“stick to topic”</li>
+<li>“can you elaborate”</li>
+</ul>
+<p>Even though we aim for an even distribution of English and German phrases for each of the three moderation strategies, not all the translated phrases show the same precision in the other language. For instance, while the phrase “calm down” marks moderation in German tweets, we could not achieve high inter-annotator agreement for English tweets.</p>
+</section>
+</section>
+<section id="research-questions-and-hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions-and-hypotheses">Research Questions and Hypotheses</h2>
+<p>Based on the previous research and the specified theoretical grounds, we derive some specific questions that summarize our expectations. Our main research question revolves around the structure of reactions to the attempts of user moderation. RQ: Does user moderation improve deliberative quality?</p>
+<p>We are mainly interested in the deliberative quality of the communication. This expectation is summarized in Hypothesis 1. <span class="math inline">\(H_1\)</span>: Moderation improves deliberative communication. We also derive more specific hypotheses – for each of the three moderation strategies. For instance, if the moderation strategy was focused on maintaining topic control, it becomes imperative to analyze whether the communication got back on track (reduce the variance of the topics). The same is true for the other two types of moderation: tone policing and elaboration support. Regarding <span class="math inline">\(H_1\)</span>, our specific expectations are</p>
+<ul>
+<li><p><span class="math inline">\(H_1a\)</span>: Emotion Control improves the tone of the discussion.</p></li>
+<li><p><span class="math inline">\(H_1b\)</span>: Elaboration Support leads to more elaboration.</p></li>
+<li><p><span class="math inline">\(H_1c\)</span>: Agenda Control leads the communication back to the original topic.</p></li>
+</ul>
+<p>We assume moderation to mainly be a local event. Hence, effect sizes should differ when the analysis is restricted to only a subset of the communication. When it comes to defining the size of the subset, i.e.&nbsp;the number of tweets to analyze, we restrict ourselves to a window of five tweets: two tweets before the intervention, the moderation, and two tweets after the intervention. Even though the first tweet might already include ample reasons to be moderated, for instance when hate speech is seen, we are mainly interested in analyzing longer discussions to allow an outcome to form. In summary, we expect moderation to affect the participation of users and the deliberative communicative quality, while taking into account different windows of communication.</p>
+</section>
+<section id="data-and-methods" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-methods">Data and Methods</h2>
+<section id="data-sampling" class="level3">
+<h3 class="anchored" data-anchor-id="data-sampling">Data Sampling</h3>
+<p>Our sampling strategy involves four steps. In the first step, based on the derived set of phrases, we sampled almost 140,000 tweets in English (127,782 tweets) and German (11,776 tweets) that include one of the seven phrases. The tweets were posted between February 2022 and February 2023, so we expect to see some variation over time. The distribution of phrases is skewed – both between moderation categories and between languages: with about 110,000 tweets, the vast majority of English tweets fall into the moderation category “engaging participation”. The most seen phrase in German belongs to the category “tone policing”.</p>
+<p>In the second step, for a random sample of the downloaded tweets, we retrieved the full conversation. This results in a dataset of 39,371 unique conversations with a total sum of 4,298,811 tweets. But not all users directly reply to the preceding tweet. Some conversations are only referred to by using hashtags or @-mentions and contain only a low number of tweets. Please also note that in some cases, the preceding tweet(s) got deleted, starting a conversation with the second (or third) tweet. To respond to these challenges, we only keep conversations that include more than five and less than 500 tweets. The data is distilled to 25,070 unique conversations with 4,126,948 tweets.</p>
+<p>To extract the response patterns, we introduce the concept of conversation paths or conversation flows. These are chains of replies that start with a root post (the first post with the opening statement of a conversation) and end with a leaf (the last contribution to a conversation). Using these structures as the unit of analysis comes close to our understanding of a discussion and also facilitates the analysis process. This approach maps the complicated network structure to quasi-linear conversations that can be interpreted analogously to a real-life discussion. To reconstruct conversational threads, we rely on the Python library <span class="citation" data-cites="dehne_dtrees_23">[@dehne_dtrees_23]</span>.</p>
+<p>This also allows the interpretation of a moderating post as an intervention: the result of the intervention can be computed as the sum of the effect on all conversation paths that include the moderating post. Similar conversation modeling describes online conversations as polyadic conversations <span class="citation" data-cites="magnani2012conversation">[@magnani2012conversation]</span>, reply-graphs <span class="citation" data-cites="cogan2012reconstruction joglekar2020analysing nishi2016reply">[@cogan2012reconstruction; @joglekar2020analysing; @nishi2016reply]</span>, or implicit thread structures <span class="citation" data-cites="wang2021recovering">[@wang2021recovering]</span>.</p>
+<p>After cleaning broken branches and filtering conversation paths, we finally arrived at a dataset of 5,017 conversation paths, 2,067 conversations, and 51,442 tweets. Overall, 9,652 different users were involved in these conversations; with an average of three users per path. On average, the longest reply-chain per conversation has a length of 123 tweets; the average length is 10.3 tweets. Since we are dealing with social media, most tweets are short: the average length of a tweet is 188 characters.</p>
+<p>To summarize, the discussions we are looking at are written exchanges that can be perceived as a conversation tree with the original tweet being the root node and answers-relations represented as the edges that lead to the answers that are the nodes in the tree. The leaves of the tree are answers that have no replies (retweets/quotes).</p>
+</section>
+<section id="data-availability" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability">Data Availability</h3>
+<p>The data used in this study is property of Twitter/X and only aggregated/processed conversation trees can be published as open data. After computing the relevant measurements only the structure is retained and could thus be published to an Open Data Repository. The analysis is reproducible and can be found on Harvard Dataverse <span class="citation" data-cites="DVN/HJKEBY_2024">[@DVN/HJKEBY_2024]</span>.</p>
+</section>
+<section id="deliberative-analytics" class="level3">
+<h3 class="anchored" data-anchor-id="deliberative-analytics">Deliberative Analytics</h3>
+<p>The generated features are directly linked to the three moderation types: tone policing refers to the polarity of the tweets, elaboration support to the degree of justification, and agenda control to a topic analysis. All of these features are extracted using computational analytics.</p>
+<section id="sentiment" class="level4">
+<h4 class="anchored" data-anchor-id="sentiment">Sentiment</h4>
+<p>To measure the polarity of tweets, we make use of a pre-trained multilingual sentiment model <span class="citation" data-cites="barbieri2022xlm">[@barbieri2022xlm]</span>. The model is trained on about 188 million tweets in 8 languages and has been finetuned for sentiment analysis. For each tweet, the model indicates the probability of a positive sentiment, a neutral sentiment, and a negative sentiment. The sum of all three probabilities is 1. Hence, we base our analysis only on the probability of a positive sentiment and neglect the other two categories.</p>
+</section>
+<section id="justification" class="level4">
+<h4 class="anchored" data-anchor-id="justification">Justification</h4>
+<p>In principle, we apply a rather similar procedure for argument analytics: Based on a finetuned model, the probability of an argument is calculated for each tweet. However, we were not aware of any reliable model to extract arguments from social media. Hence, we finetuned our own RoBERTa model. The application of the finetuned model has two advantages: first, we tune the model to respect the specific argument characteristics of social media data. Most of the available models were trained on a different type of data, e.g.&nbsp;oral communication. Second, we extend the base model’s capacities to a broader range of topics. With regard to the first goal, we rely on two Twitter datasets with manually annotated arguments: GerCTT <span class="citation" data-cites="schaefer2022gercct">[@schaefer2022gercct]</span> and PPT4AM <span class="citation" data-cites="bhatti2021argument">[@bhatti2021argument]</span>. The latter goal – extending the range of topics – is achieved by including the XArgMining dataset <span class="citation" data-cites="toledo2020multilingual">[@toledo2020multilingual]</span>. As the base model, we rely on the Twitter-XML-Roberta-model <span class="citation" data-cites="barbieri2022xlm">[@barbieri2022xlm]</span>. With an F1 score of 0.805, the model works well in predicting arguments on social media. When the model is applied, for each tweet, the probability of an argument is given. The probability ranges between 0 (no justification) and 1 (justification).</p>
+</section>
+<section id="topic-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="topic-analysis">Topic Analysis</h4>
+<p>To extract the topics of the tweets, we apply BERTopic <span class="citation" data-cites="grootendorst2022bertopic">[@grootendorst2022bertopic]</span>. BERTopic uses transformers and clustering algorithms to assign documents to one or more topics. Due to the bilingual nature of the conversations, we make use of the multilingual sentence transformers model as proposed by <span class="citation" data-cites="reimers2019sentence">[@reimers2019sentence]</span>. After the model has been applied, each tweet is assigned to a topic space. For instance, when 4 topics have been revealed, the probability of the tweet belonging to each of the 4 topics is given – with all probabilities summing up to 1.</p>
+</section>
+</section>
+<section id="units-of-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="units-of-analysis">Units of Analysis</h3>
+<p>The derived hypotheses require measuring the effect of moderation. If moderation improves deliberative communication on social media, we expect to see a difference between the tweets after the moderation and the tweets before the moderation.</p>
+<p>In principle, every conversation without moderation constitutes the control group – with a number of tweets before and after every tweet in this conversation. The intervention is synthetically created, e.g.&nbsp;by randomly sampling one tweet within conversations without moderation. We don’t expect to see effects of moderation in the control group. However, as the discussion naturally progresses, some effects unrelated to moderation might take place. For instance, the tone of the discussion might improve anyways. Users might also feel the need to justify their claims as the discussion progresses. Or users might come back to the original topic regardless of an intervention.</p>
+<p>To identify such potentially unrelated effects, we create a control group by taking a random sample of all paths without moderation. Then, in a second step, we randomly sample one tweet as a fictitious non-moderation intervention. The same rules apply to this type of non-intervention: it must take place earliest at the third tweet, and the conversation needs to last longer than one tweet after the sampled tweet. In total, we sampled 2.500 cases of non-moderated conversations.</p>
+<p>As stated by the hypotheses, we need to measure the effects both globally and locally. Hence, we create two datasets: the original dataset is used as-is for analyzing the effects of moderation on the global level; no restrictions to the number of tweets apply. We take the full length of conversations. To evaluate the effects locally, we have generated a second dataset that restricts the conversations to five tweets: besides the moderation we keep two tweets before and after the intervention.</p>
+<p>When it comes to combining the first and second set of hypotheses, we need to create additional datasets. We are not only interested in comparing pre- to post-moderation tweets, but also in comparing the effects for two types of users: users that have tweeted both before <em>and</em> after the intervention and users that only participated before <em>or</em> after the intervention.</p>
+<p>Hence, we end up with six datasets: (<em>All</em>) Complete conversations with all users; (<em>All n=5)</em> Subset of 5 tweets with all users; (<em>Same</em>) Complete conversations with users that tweet both before and after the intervention; (<em>Same n=5</em>) Subset of five tweets with users that tweet before and after the intervention; (<em>Different</em>) Complete conversation with users that either tweet before or after the intervention; (<em>Different n=5</em>) Subset of five tweets with users that either tweet before or after the intervention. All of our variables are generated for each of the 6 datasets.</p>
+</section>
+</section>
+<section id="variables" class="level2">
+<h2 class="anchored" data-anchor-id="variables">Variables</h2>
+<p>As stated in our hypotheses, we focus on one distinct aspects of deliberative quality: Quantifying the effect size and strength of moderation. When it comes to the independent variables, our most important explanatory variable is the type of moderation. Additionally, to quantify the effect size, we also add moderation tweet characteristics and some control variables to the models.</p>
+<section id="dependent-variables" class="level3">
+<h3 class="anchored" data-anchor-id="dependent-variables">Dependent Variables</h3>
+<p>Our dependent variables indicate deliberative quality before and after the moderation. For tone policing to be successful, we need to see a difference in sentiment values before and after the moderation. The same is true for the degree of justification: If a user asks for elaboration, other users might be inclined to provide arguments for their claims. Regarding topics, users should get back to the original topics that were addressed before the moderation.</p>
+<p>While sentiment and justification can be compared more easily by subtracting the mean of pre-moderation values from the mean of post-moderation values – comparing topic coherence is more difficult. The main challenge is to compare a set of values over a range of topics before and after the moderation. We addressed this challenge by calculating the cosine similarity of the mean of pre- and post-moderation values. Higher values indicate similarity of topics, i.e.&nbsp;the tweets after the moderation address the same topics; lower values indicate that the topic distribution changes. Please note the different scale of the dependent variables: the difference in sentiment and argumentation varies between -1 and 1, the cosine similarity ranges between 0 and 1.</p>
+</section>
+<section id="independent-variables" class="level3">
+<h3 class="anchored" data-anchor-id="independent-variables">Independent Variables</h3>
+<p>Our main independent variable is the <strong>type of intervention</strong>. In total, the dataset includes 2.610 moderation interventions. Due to missing data when generating the six different datasets, the numbers differ and are shown in Table 1. Besides no moderation (we sampled 2500 conversations), engaging participation is seen most often.</p>
+<div id="tbl-myformattedtable" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-myformattedtable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Number of Moderation Types
+</figcaption>
+<div aria-describedby="tbl-myformattedtable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Moderation Type</strong></th>
+<th><strong>All</strong></th>
+<th></th>
+<th></th>
+<th><strong>n = 5</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><em>Prepost</em></td>
+<td><em>Same</em></td>
+<td><em>Diff</em></td>
+<td><em>Prepost</em></td>
+<td><em>Same</em></td>
+<td><em>Diff</em></td>
+</tr>
+<tr class="even">
+<td>no moderation</td>
+<td>1999</td>
+<td>1707</td>
+<td>1739</td>
+<td>1480</td>
+<td>1274</td>
+<td>842</td>
+</tr>
+<tr class="odd">
+<td>agenda control</td>
+<td>329</td>
+<td>314</td>
+<td>190</td>
+<td>273</td>
+<td>266</td>
+<td>57</td>
+</tr>
+<tr class="even">
+<td>engaging participation</td>
+<td>1393</td>
+<td>1253</td>
+<td>1094</td>
+<td>1051</td>
+<td>972</td>
+<td>625</td>
+</tr>
+<tr class="odd">
+<td>tone policing</td>
+<td>221</td>
+<td>191</td>
+<td>167</td>
+<td>161</td>
+<td>140</td>
+<td>105</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>We also include some important tweet characteristics into our models. In principle, we assume post-moderation behavior to be influenced by the type of moderation, but we also believe more friendly, more justified, and more topic-linked moderation interventions to make a difference. Hence, moderation behavior is included by <strong>sentiment prediction</strong>, <strong>argument prediction</strong>, and <strong>cosine value</strong>. The operationalization is the same as for the dependent variables.</p>
+<p>Moreover, some control variables are used: first, we use the <strong>number of characters</strong> of the intervention as a measure for the length of the intervention. The underlying assumption is that longer interventions have a stronger effect. The <strong>number of posted tweets</strong> quantifies the difference in participation frequency of users between pre- and post-moderation tweets. Higher values indicate different user behaviors of pre- and post-moderation, e.g.&nbsp;when many new users join the conversation right after the intervention. The occurrence of the moderation within the conversation is measured by the variable <strong>position</strong>. As stated in our previous sections, the lowest value is 3. We also control for the number of tweets within the complete conversation (<strong>conversation length</strong>) and the number of tweets of the conversation path (<strong>path length</strong>). The length of the path is at least two tweets longer than the position of the moderation. Finally, to control for incomplete conversations, we include variables indicating the <strong>number of deleted tweets</strong> and whether the path was <strong>fixed to the root post</strong>. The full descriptive statistics can be found in the supplemental materials.</p>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>In general, as seen by Table 2, throughout the models, the estimated effects of the differences are rather low. This is to be expected and confirms our expectation. This pattern also applies to the other two dependent variables – degree of argumentation and cosine similarity (see Table 3 and Table 4).</p>
+<section id="sentiment-1" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-1">Sentiment</h3>
+<p>When the effects of the three moderation types are compared to the reference type of unmoderated conversations, almost no significant differences can be seen. In comparison to unmoderated conversations, tone policing increases the overall tone of the conversations; but only for users who have already taken part in the discussion before the intervention. On the contrary, the overall tone decreases for different users – which is in line with our hypothesis. These contradictory results point towards the fact that users with a history in the discussion react differently towards the intervention than users who are new to the conversation. The first type of users is directly confronted by the intervention and might disagree with the intervention; the latter type of users only jumps into the discussion at a later stage. Interestingly, the effects are only significant for the complete conversations. The narrow window of five tweets does not make a difference.</p>
+<div id="tbl-result_sentiment" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="*** p < 0.001, ** p < .01, * p < 0.05, + p < 0.1">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-result_sentiment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Effect on Sentiment based on different Moderation Strategies
+</figcaption>
+<div aria-describedby="tbl-result_sentiment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 13%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>All</strong></th>
+<th></th>
+<th><strong>Same</strong></th>
+<th></th>
+<th><strong>Diff</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+</tr>
+<tr class="even">
+<td>Intercept</td>
+<td>-0.0304</td>
+<td>-0.0199</td>
+<td>0.0049</td>
+<td>-0.0347</td>
+<td>-0.0252</td>
+<td>-0.0263</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Agenda Control</td>
+<td>-0.0055</td>
+<td>-0.0108</td>
+<td>0.0330*</td>
+<td>0.0058</td>
+<td>-0.0522*</td>
+<td>0.0149</td>
+</tr>
+<tr class="odd">
+<td>Engaging</td>
+<td>-0.0144*</td>
+<td>0.0115</td>
+<td>-0.0073</td>
+<td>0.0179</td>
+<td>-0.0343*</td>
+<td>0.0068</td>
+</tr>
+<tr class="even">
+<td>Tone Policing</td>
+<td>-0.0092</td>
+<td>0.0093</td>
+<td>-0.0094</td>
+<td>0.0053</td>
+<td>0.0276</td>
+<td>0.0262</td>
+</tr>
+<tr class="odd">
+<td><strong>Moderation </strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sentiment(+)</td>
+<td>0.1139***</td>
+<td>0.0447*</td>
+<td>0.0646**</td>
+<td>0.0201</td>
+<td>0.2073***</td>
+<td>0.1478***</td>
+</tr>
+<tr class="odd">
+<td>Argument(1)</td>
+<td>0.0730*</td>
+<td>0.0607</td>
+<td>0.0594</td>
+<td>0.0484</td>
+<td>-0.0141</td>
+<td>0.0188</td>
+</tr>
+<tr class="even">
+<td>Topic</td>
+<td>0.0134</td>
+<td>-0.0049</td>
+<td>-0.0108</td>
+<td>-0.0289*</td>
+<td>0.0175</td>
+<td>-0.0083</td>
+</tr>
+<tr class="odd">
+<td><strong>Controls</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Num.Obs.</td>
+<td>3703</td>
+<td>2826</td>
+<td>3244</td>
+<td>2524</td>
+<td>1565</td>
+<td>1302</td>
+</tr>
+<tr class="odd">
+<td>R2 Adj.</td>
+<td>0.017</td>
+<td>0.005</td>
+<td>0.009</td>
+<td>0.002</td>
+<td>0.054</td>
+<td>0.073</td>
+</tr>
+<tr class="even">
+<td>AIC</td>
+<td>-2682.1</td>
+<td>-1758.2</td>
+<td>-1970.6</td>
+<td>-1021.4</td>
+<td>-50.0</td>
+<td>109.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Engaging participation shows significant effects for both analytic groups, all users and different users. In both scenarios, the effect is negative, i.e.&nbsp;the overall tone of the conversation decreases. Again, this is in line with our hypothesis. No significant effects are seen for engaging participation. In sum, with regard to the type of intervention, there is mixed evidence. Under some circumstances, moderation makes a statistically significant difference.</p>
+<p>The results in Table 2 also show significant effects for moderation behavior: being friendly while at the same time confronting other users of a conversational misconduct (of not being friendly), increases polarity. The conversations become more friendly. The same effect is seen for the level of argumentation – but only for the general pre- vs.&nbsp;post-moderation data. Providing justifications when users intervene increases polarity.</p>
+<p>With regard to the control variables (listed in supplemental materials), a systematic effect can only be seen for different users. First, the position of the interventions makes a difference – with later interventions to increase the sentiment for new users. Second, the longer the conversation, the more unfriendly the reaction of new users.</p>
+</section>
+<section id="justification-1" class="level3">
+<h3 class="anchored" data-anchor-id="justification-1">Justification</h3>
+<p>The results for justification are given in Table 3. When argumentation is taken as the dependent variable, the differences between unmoderated and moderated conversations becomes apparent: throughout the models, the intercept is negative and, in three of the six models, statistically significant. However, the effects differ per type of intervention. While tone policing decreases the degree of justification in the subsequent tweets even more, agenda control increases the amount of justification. The effect of agenda control is only significant for new users joining the discussion, for both the full conversations and the 5-tweet window of conversations. This, again, points towards the fact that the success of an intervention depends upon the type of user: users that have been participating before the intervention do not feel the need to provide arguments. On the contrary, new users show a different pattern. In sum, hypothesis 1b is only partly confirmed.</p>
+<p>The models also reveal the degree of justification of the intervention to make a significant difference: justified interventions attract more justification in the subsequent tweets. This relationship is statistically significant when either the full dataset or different users are taken into account. Users who have participated before the intervention do not provide more arguments. When previous topics are addressed, less justified tweets are seen for users joining the conversation. Sentiment is only (marginally) significant for some of the user scenarios.</p>
+<div id="tbl-result_justification" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="*** p < 0.001, ** p < .01, * p < 0.05, + p < 0.1">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-result_justification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Effect on Justification Levels based on different Moderation Strategies
+</figcaption>
+<div aria-describedby="tbl-result_justification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>All</strong></th>
+<th></th>
+<th><strong>Same</strong></th>
+<th></th>
+<th><strong>Diff</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+</tr>
+<tr class="even">
+<td>Intercept</td>
+<td>-0.0390***</td>
+<td>-0.0367**</td>
+<td>-0.0192</td>
+<td>-0.0192</td>
+<td>-0.0674**</td>
+<td>-0.0266</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tone Policing</td>
+<td>-0.0153*</td>
+<td>-0.0249**</td>
+<td>-0.0180*</td>
+<td>-0.0312**</td>
+<td>-0.0033</td>
+<td>-0.0028</td>
+</tr>
+<tr class="odd">
+<td>Engaging</td>
+<td>-0.0002</td>
+<td>0.0004</td>
+<td>0.0033</td>
+<td>-0.0023</td>
+<td>-0.0074</td>
+<td>-0.0006</td>
+</tr>
+<tr class="even">
+<td>Agenda Control</td>
+<td>0.0058</td>
+<td>0.0009</td>
+<td>-0.0001</td>
+<td>-0.0016</td>
+<td>0.0553***</td>
+<td>0.0334+</td>
+</tr>
+<tr class="odd">
+<td><strong>Moderation </strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sentiment(+)</td>
+<td>0.0081</td>
+<td>0.0183+</td>
+<td>0.0166+</td>
+<td>0.0148</td>
+<td>-0.0120</td>
+<td>0.0282</td>
+</tr>
+<tr class="odd">
+<td>Argument(1)</td>
+<td>0.0578***</td>
+<td>0.0503**</td>
+<td>0.0115</td>
+<td>0.0278</td>
+<td>0.1314***</td>
+<td>0.0946*</td>
+</tr>
+<tr class="even">
+<td>Topic</td>
+<td>0.0051</td>
+<td>0.0048</td>
+<td>0.0091</td>
+<td>0.0071</td>
+<td>-0.0185*</td>
+<td>-0.0328**</td>
+</tr>
+<tr class="odd">
+<td><strong>Controls</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Num.Obs.</td>
+<td>3585</td>
+<td>2784</td>
+<td>3148</td>
+<td>2487</td>
+<td>1467</td>
+<td>1237</td>
+</tr>
+<tr class="odd">
+<td>R2 Adj.</td>
+<td>0.007</td>
+<td>0.010</td>
+<td>0.006</td>
+<td>0.001</td>
+<td>0.017</td>
+<td>0.024</td>
+</tr>
+<tr class="even">
+<td>AIC</td>
+<td>-8649.5</td>
+<td>-5952.5</td>
+<td>-6634.4</td>
+<td>-4576.4</td>
+<td>-2726.9</td>
+<td>-1925.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="topics" class="level3">
+<h3 class="anchored" data-anchor-id="topics">Topics</h3>
+<p>The results for topic similarity in Table 4 also show a clear difference between unmoderated and moderated conversations. Unmoderated conversations are more coherent in their topics. When agenda control is applied, topics mentioned before the intervention are less likely addressed. The effect of agenda control is statistically significant when only 5 tweets are analyzed; it does not affect the full conversation. Hence, hypothesis 1c is partly confirmed.</p>
+<div id="tbl-result_topics" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="*** p < 0.001, ** p < .01, * p < 0.05, + p < 0.1">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-result_topics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Effect on Topic Adherence based on different Moderation Strategies
+</figcaption>
+<div aria-describedby="tbl-result_topics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>All</strong></th>
+<th></th>
+<th><strong>Same</strong></th>
+<th></th>
+<th><strong>Diff</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+<td><em>Full</em></td>
+<td><em>n = 5</em></td>
+</tr>
+<tr class="even">
+<td>Intercept</td>
+<td>0.5612***</td>
+<td>0.5298***</td>
+<td>0.5136***</td>
+<td>0.4228***</td>
+<td>0.3414***</td>
+<td>0.4266***</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tone Policing</td>
+<td>0.0040</td>
+<td>-0.0041</td>
+<td>-0.0099</td>
+<td>-0.0057</td>
+<td>0.0234</td>
+<td>0.0170</td>
+</tr>
+<tr class="odd">
+<td>Engaging</td>
+<td>0.0099</td>
+<td>0.0086</td>
+<td>0.0109</td>
+<td>0.0112</td>
+<td>0.0103</td>
+<td>0.0350+</td>
+</tr>
+<tr class="even">
+<td>Agenda Control</td>
+<td>-0.0187</td>
+<td>-0.0635***</td>
+<td>-0.0136</td>
+<td>-0.0536**</td>
+<td>0.0065</td>
+<td>-0.2605**</td>
+</tr>
+<tr class="odd">
+<td><strong>Moderation</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sentiment(+)</td>
+<td>-0.0054</td>
+<td>0.0099</td>
+<td>0.0166</td>
+<td>0.0377</td>
+<td>-0.0306</td>
+<td>-0.0212</td>
+</tr>
+<tr class="odd">
+<td>Argument(1)</td>
+<td>-0.0469</td>
+<td>-0.0638</td>
+<td>-0.0809</td>
+<td>0.0055</td>
+<td>-0.0123</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Topic</td>
+<td>0.3371***</td>
+<td>0.3999***</td>
+<td>0.4146***</td>
+<td>0.4966***</td>
+<td>0.4514***</td>
+<td>0.4509***</td>
+</tr>
+<tr class="odd">
+<td><strong>Controls</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Num.Obs.</td>
+<td>3703</td>
+<td>2826</td>
+<td>3244</td>
+<td>2524</td>
+<td>1565</td>
+<td>1302</td>
+</tr>
+<tr class="odd">
+<td>R2 Adj.</td>
+<td>0.154</td>
+<td>0.193</td>
+<td>0.204</td>
+<td>0.246</td>
+<td>0.220</td>
+<td>0.224</td>
+</tr>
+<tr class="even">
+<td>AIC</td>
+<td>-895.4</td>
+<td>-591.5</td>
+<td>-252.1</td>
+<td>131.4</td>
+<td>336.0</td>
+<td>406.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Moderation behavior is only significant for cosine similarity: if users refer to previous topics when intervening, the subsequent tweets also more likely address the same topics. This effect is seen throughout the models, no matter which of the six scenarios is analyzed. The other two moderation behaviors – sentiment and justification – do not influence the post-moderation tweets.</p>
+<p>When it comes to the control variables (as seen in Table A 5), longer moderation interventions motivate subsequent users to come back to the original topics. However, the effect is rather small. Also, the position of the intervention within the conversation is significant: Later interventions decrease topic similarity for users that have been participating both before and after the intervention. Similarly, the length of the conversation correlates positively with cosine similarity. This is to be expected as longer conversations provide more possibilities to address more topics, and increase the topic space for later tweets. It becomes easier to address at least one of the various topics. The finding that, for new users, the number of deleted tweets decreases topic similarity, is also to be expected. In many instances, users refer to the later deleted tweet, which results in a low topic similarity.</p>
+</section>
+<section id="predicted-effects" class="level3">
+<h3 class="anchored" data-anchor-id="predicted-effects">Predicted Effects</h3>
+<p>In Figure 3, the predicted effects are shown. In principle, the figure summarizes our previous findings: unmoderated and moderated conversations differ. However, these differences are only statistically significant for specific scenarios. In most scenarios, tone policing increases the overall tone of the conversations, decreases the degree of argumentation, and motivates users to address the original topics. Engaging participation shows a similar pattern: the sentiment value increases, justification decreases, and original topics are addressed. Agenda control is the most restricted and only proves to be successful given very specific settings. The reference group of unmoderated conversations also reveal effects unrelated to specific interventions: The sentiment value increases, the degree of justification decreases, and original topics are addressed to a large degree.</p>
+<div id="fig-prediced_effect" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-prediced_effect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/fig_diff_pred.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prediced_effect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Predicted Effects
+</figcaption>
+</figure>
+</div>
+<p>The most important findings in Figure 3 are revealed when the differences to the unmoderated conversations are taken into account. Tone policing amplifies the positive effect for sentiments when users take part both before and after the intervention. The same is true for the degree of argumentation: tone policing decreases the willingness to provide arguments. No clear difference for topic similarity is seen. For new users, engaging participation shows an opposite effect: the sentiment value decreases. Also, engaging participation further decreases the degree of justification. Again, no clear difference can be seen for topic similarity. Finally, the effect of agenda control is different than for unmoderated conversations: New users provide more arguments. When, however, topic similarity is analyzed, only within the window of 5 tweets, a clear difference to unmoderated conversations is seen.</p>
+</section>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>Firstly, we observed that user moderation, in contrast to more targeted, collective civic moderation, tends to produce smaller effect sizes on deliberative outcomes like the civility of the tone, the amount of justification for claims, or the coherence of the topic at hand. Our study focused on general discussions rather than specifically on hate speech, which allowed us to observe the broader implications of moderation across various conversation types. It can be argued that perfectly deliberative discussions with the highest standard of civility need moderation, too and here the rationalistic idea of moderation might apply the best. Instead of using single posts as the unit of analysis, the conversations were modeled as linear pathways in a reply tree. Most research concerned with deliberation online focuses on single posts or author groups as it is easier to sample discussions based on these criteria. Having a logical access point is important for querying the vast data available. Another explanation might be that it requires more computational methods to model and investigate the conversation trees as a graph.</p>
+<p>Using this novel way of modeling conversations online, we found that longer threads of discussion are relatively rare, which can be attributed to the drop-offs in participation following moderation interventions. Our data indicates that dialogues, where two users engage directly with each other, are the most typical form of conversation. In these dialogues, the person addressed usually responds immediately, creating a dynamic interaction. This has certain implications for deliberation research online. As deliberation is thought of as a group process, dialogues need different moderation strategies. It became apparent that strategies tend to be more effective when they are appropriately tailored to the specific context of the conversation. However, it is important to note that our research did not include an in-depth qualitative exploration. Such an analysis was not the focus of this paper, as we concentrated more on quantitative assessments of moderation effects. For instance, it would be interesting to see if moderation techniques can influence the character of the response patterns which could be used as a proxy for openness. This would cater to the idea of supporting more participation to improve deliberative quality.</p>
+<p>Finally, we also explored windows of five consecutive posts in contrast to the complete reply paths. Our findings suggest that there are diminishing effects of the moderating intervention the longer the conversation goes on. This is in line with current research on the attention span of users and the limitations of online platforms that don’t always show the user the full picture of what happened during the previous communication. This means that the area of effect is small and repeated interventions might be an interesting object for future research.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>In this study, we focus on the impact of moderation in online discussions, with our analysis being exclusively applied to the Twitter platform. Here, our study does not address sequential effects. This means that we did not analyze how moderation strategies might influence subsequent interactions in a conversation thread over time. Understanding these dynamics could provide deeper insights into the long-term effectiveness of moderation. Another limitation is that our analysis was confined to just seven moderation phrases. This restriction potentially overlooks a broader range of moderation tactics that could vary in effectiveness and applicability. Exploring a wider array of moderation strategies could offer a more comprehensive understanding of how different approaches influence online discussions. We also considered the variation of topics within our study. A key question that arises is whether there are specific topics that attract more moderation and subsequently exhibit better effects from these interventions. This aspect highlights the potential variability in moderation effectiveness depending on the subject matter of the discussion. It is crucial to note that this was not a user-centric study. Our approach focused more on the moderation phrases and their immediate impacts, rather than delving into the perspectives and behaviors of individual users. For this reason,</p>
+<p>Furthermore, we acknowledge the potential issue of endogeneity in our selection of observations. The reason why users choose to intervene in conversations (or refrain from doing so) remains unclear, which could pose a challenge in fully understanding the dynamics at play. This uncertainty is compounded by the limited validity of our control variables, which may not fully account for all relevant external factors influencing user behavior. In summary, while our study provides valuable insights into the effects of moderation on Twitter, these findings are shaped by certain limitations regarding scope, methodology, and the depth of user behavior. Future research could benefit from addressing these gaps to gain a more holistic understanding of online moderation practices.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Even civil conversations benefit from moderation, and we evangelize changing the unit of analysis to the conversation threads instead of the posts of uncivil behavior. This way, online deliberation can be researched more analogously to offline deliberation making the results more comparable and generalizable. Although there is a small but overall significant effect of the user moderation, the intended effect of the moderation strategies is reached only in some circumstances dependent on the stability of the participant composition. In contrast, leading by example works more reliably. For instance, the findings indicate that being polite engenders politeness to some degree. Similarly, staying on topic makes it more likely that future posts will also stay on topic. This should motivate users that want to improve the public sphere online to be role models. It is harder to recommend specific strategies. These depend on the situation. In order to provide advice for platforms, civic user groups or public policy, further analysis of the long term effects of moderation is needed. But it should be a positive sign that ordinary users engage in and have positive effects with moderating metatalk without having an agenda other than their personal interests. This gives a different spin to the bleak image of the lost public deliberative online sphere.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" role="list">
+
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>In the subsequent text, we use Twitter and tweets (and not X and posts). This is due to the fact that the data was gathered in 2023 before Twitter Inc.&nbsp;renamed their social media site to X. Also, before renaming, posts were named tweets.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/juliandehne\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
