@@ -17,7 +17,7 @@
 
 <!-- \newpage -->
 
-## German Language
+## German Community
 - **Dehne J., Daikeler J., Silber H., Rammstedt B., Keusch F., Kreuter F., Blumenberg J., Lechner C., Römer L., Schoch D., Siegers P., Jünger S., & Weller K. (2024)**: Die Vermittlung von Best Practices zur Messung von Datenqualität in den quantitativen Sozialwissenschaften. In: Steinmann L. (Ed.): Proceedings of the INFORMATIK 2024, Workshop Data Science Community. Wiesbaden: Gesellschaft für Informatik e.V.
 
 - **Dehne J., Strickroth S., & Lucke U. (2020)**: FL-Trail: digitally supporting group-based inquiry learning. In: Zender R., Ifenthaler D., Leonhardt T., & Schumacher C. (Eds.): DELFI 2020 - Die 18. Fachtagung Bildungstechnologien der Gesellschaft für Informatik e.V. Bonn: Gesellschaft für Informatik e.V. (pp. 319-330).
@@ -32,13 +32,11 @@
 
 - **Dehne Julian, Wiepke Axel, & Lucke Ulrike (2017)**: Evaluating e-learning - A comment on "Media will never influence learning". In: Christoph Igel, Carsten Ullrich, and Wessner Martin (eds.): Bildungsräume2017: Gesellschaft für Informatik Bonn, pp. 167-177.
 
+- **Zender Raphael, Dehne Julian, Geßner Hendrik, & Lucke Ulrike (2013)**: RouteMe - Routing in ad hoc networks as a pervasive learning game. In: i-com12(1), pp.45-52.
 
-
-## International
+## International Community
 
 - **Dehne J., & Paaßen B. (2022)**: A conceptual graph-based model of creativity in learning. In: Frontiers in Education, (p. 851). Frontiers.
-
-- **Dehne Julian, & Lucke Ulrike (2015)**: An infrastructure for cross-platform competence-based assessment. In: Facing the Challenges of Assessing 21st Century Skills in the Newly Emerging Educational Ecosystems (ECTEL), Toledo, pp. 29-38.
 
 - **Dehne Julian, & Nguyen Thi (2017)**: Defining consistency in higher education. EARLI 2017, Tampere, August 2017. (Poster).
 
@@ -46,6 +44,6 @@
 
 - **Dehne Julian, Nguyen Thi, & Lucke Ulrike (2016)**: Bridging the interinstitutional gap - Tracing lifelong skill evolution. In: The Higher Education Conference (HEC). (Presentation).
 
-- **Zender Raphael, Dehne Julian, Geßner Hendrik, & Lucke Ulrike (2013)**: RouteMe - Routing in ad hoc networks as a pervasive learning game. In: i-com12(1), pp.45-52.
+- **Dehne Julian, & Lucke Ulrike (2015)**: An infrastructure for cross-platform competence-based assessment. In: Facing the Challenges of Assessing 21st Century Skills in the Newly Emerging Educational Ecosystems (ECTEL), Toledo, pp. 29-38.
 
 
