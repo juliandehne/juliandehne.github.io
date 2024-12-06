@@ -54,3 +54,5 @@ author:
       - name: University of Göttingen
         address: Goßlerstraße 19, 37073 Göttingen
 
+profile:
+  default: website

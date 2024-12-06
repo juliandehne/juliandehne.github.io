@@ -1,5 +1,10 @@
 # Software
 
+
+## KODAQs Toolbox
+
+In my short stay with GESIS I was responsible for building a platform that aggregates open educational resources (OER) for data quality. The [kodaqs-toolbox](https://kodaqs-toolbox.gesis.org/) uses a complex pipeline of transformations to allow the OER to be developed independently on Github with different Tech-Stacks whilst maintaining the look-and-feel of a single website.
+
 ## Delab - A Chatbot Research Environment for Online Deliberation
 
 In Göttingen Valentin Gold and me developed a [toolchain](https://github.com/juliandehne/delab) that can download live discussions on social media to be presented for human-in-the-loop coders. This allowed us to test different moderation strategies for the chatbot to improve social media discussion.
@@ -19,18 +24,18 @@ However, encountering challenges in mainstreaming the [COMPBASE](https://gitup.u
 
 ## FL-TRAIL - Supporting Inquiry-Based Learning in Higher Education
 
-During my PhD I developed  [FL-Trail](https://github.com/juliandehne/fltrail) tool that supports student-centered learning.
+During my PhD I developed the [FL-Trail](https://github.com/juliandehne/fltrail) tool that supports student-centered learning.
 
 ::: {.content-visible when-format="html"}
 ![](img/fltrail.png)
 :::
 
-{{< pagebreak >}}
-
 ## Libraries
 
 - [delab-trees](https://pypi.org/project/delab-trees/): A python library to analyze social media conversation trees
 - [delab-socialmedia](https://pypi.org/project/delab-socialmedia/) A python library to download social media conversation trees, download daily conversation samples, and post on social media
+- [socialgroupdetection](https://pypi.org/project/socialgroupdetection/0.0.1/) A python library to detect social group appeals in political texts
+
 
 ## Other Involvements
 

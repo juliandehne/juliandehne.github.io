@@ -15,7 +15,11 @@
 
 - **Dehne J., & Gold V. (2024, under review)**: Strategies for Deliberative Moderation in Social Media. In: Journal of Deliberative Democracy.
 
-<!-- \newpage -->
+
+\newpage
+
+
+
 
 ## German Community
 - **Dehne J., Daikeler J., Silber H., Rammstedt B., Keusch F., Kreuter F., Blumenberg J., Lechner C., Römer L., Schoch D., Siegers P., Jünger S., & Weller K. (2024)**: Die Vermittlung von Best Practices zur Messung von Datenqualität in den quantitativen Sozialwissenschaften. In: Steinmann L. (Ed.): Proceedings of the INFORMATIK 2024, Workshop Data Science Community. Wiesbaden: Gesellschaft für Informatik e.V.
