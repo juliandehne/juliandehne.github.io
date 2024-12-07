@@ -3,7 +3,7 @@
 
 ## KODAQs Toolbox
 
-In my short stay with GESIS I was responsible for building a platform that aggregates open educational resources (OER) for data quality. The [kodaqs-toolbox](https://kodaqs-toolbox.gesis.org/) uses a complex pipeline of transformations to allow the OER to be developed independently on Github with different Tech-Stacks whilst maintaining the look-and-feel of a single website.
+At GESIS, I am responsible for developing a platform that consolidates open educational resources (OER) focused on data quality. The [KODAQS TOOLBOX](https://kodaqs-toolbox.gesis.org) employs a sophisticated transformation pipeline, enabling OER to be created independently on GitHub using various technology stacks while preserving a cohesive look and feel across a unified website.
 
 ## Delab - A Chatbot Research Environment for Online Deliberation
 
