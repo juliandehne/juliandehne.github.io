@@ -19,35 +19,32 @@
 \newpage
 
 
+# Combined Publications
 
+1. **Dehne J., Daikeler J., Silber H., Rammstedt B., Keusch F., Kreuter F., Blumenberg J., Lechner C., Römer L., Schoch D., Siegers P., Jünger S., & Weller K. (2024)**: Die Vermittlung von Best Practices zur Messung von Datenqualität in den quantitativen Sozialwissenschaften. In: Steinmann L. (Ed.): *Proceedings of the INFORMATIK 2024, Workshop Data Science Community*. Wiesbaden: Gesellschaft für Informatik e.V.
 
-## German Community
-- **Dehne J., Daikeler J., Silber H., Rammstedt B., Keusch F., Kreuter F., Blumenberg J., Lechner C., Römer L., Schoch D., Siegers P., Jünger S., & Weller K. (2024)**: Die Vermittlung von Best Practices zur Messung von Datenqualität in den quantitativen Sozialwissenschaften. In: Steinmann L. (Ed.): Proceedings of the INFORMATIK 2024, Workshop Data Science Community. Wiesbaden: Gesellschaft für Informatik e.V.
+2. **Dehne J., & Paaßen B. (2022)**: A conceptual graph-based model of creativity in learning. In: *Frontiers in Education*, (p. 851). Frontiers.
 
-- **Dehne J., Strickroth S., & Lucke U. (2020)**: FL-Trail: digitally supporting group-based inquiry learning. In: Zender R., Ifenthaler D., Leonhardt T., & Schumacher C. (Eds.): DELFI 2020 - Die 18. Fachtagung Bildungstechnologien der Gesellschaft für Informatik e.V. Bonn: Gesellschaft für Informatik e.V. (pp. 319-330).
+3. **Dehne J., Strickroth S., & Lucke U. (2020)**: FL-Trail: digitally supporting group-based inquiry learning. In: Zender R., Ifenthaler D., Leonhardt T., & Schumacher C. (Eds.): *DELFI 2020 - Die 18. Fachtagung Bildungstechnologien der Gesellschaft für Informatik e.V.* Bonn: Gesellschaft für Informatik e.V. (pp. 319-330).
 
-- **Dehne Julian, Knoth Alexander, & Lucke Ulrike (2019)**: Strengthening the study entry phase research-based learning and the use of digital media. In: Gabi Reinmann, Eileen Lübcke, and Anna Heudorfer (eds.): Research-based learning in the study entry phase. Wiesbaden: Springer Fachmedien Wiesbaden.
+4. **Dehne Julian, Knoth Alexander, & Lucke Ulrike (2019)**: Strengthening the study entry phase research-based learning and the use of digital media. In: Gabi Reinmann, Eileen Lübcke, and Anna Heudorfer (Eds.): *Research-based learning in the study entry phase*. Wiesbaden: Springer Fachmedien Wiesbaden.
 
-- **Dehne, Julian, & Kiy, Alexander (2019)**: Using an ontology-based competence database for curriculum alignment of portfolio-based learning. In: *Proceedings of DELFI Workshops 2019*, Bonn: Gesellschaft für Informatik e.V., pp. 121-128. [DOI: 10.18420/DELFI2019-WS-114](http://dl.gi.de/handle/20.500.12116/27953).
+5. **Dehne, Julian, & Kiy, Alexander (2019)**: Using an ontology-based competence database for curriculum alignment of portfolio-based learning. In: *Proceedings of DELFI Workshops 2019*. Bonn: Gesellschaft für Informatik e.V., pp. 121-128. [DOI: 10.18420/DELFI2019-WS-114](http://dl.gi.de/handle/20.500.12116/27953).
 
-- **Dehne, Julian, Kapp, Martin, Strickroth, Sven, & Lucke, Ulrike (2018)**: Cooperative learning with transparent learning outcomes using a mobile app. In: *CEUR Workshop Proceedings*, Vol. 2250. [URL: https://ceur-ws.org/Vol-2250].
+6. **Dehne, Julian, Kapp, Martin, Strickroth, Sven, & Lucke, Ulrike (2018)**: Cooperative learning with transparent learning outcomes using a mobile app. In: *CEUR Workshop Proceedings*, Vol. 2250. [URL: https://ceur-ws.org/Vol-2250].
 
-- **Dehne Julian, Schiefner-Rohs Mandy, & Lucke Ulrike (2017)**: Digital media and research-oriented teaching and learning-empirical insights into projects and teaching concepts. In: Proceedings of the 25th Annual Meeting of the Society for Media in Science (GMW), September 5-8, 2017, Chemnitz, Germany: Waxmann. (Best Paper Award)
+7. **Dehne Julian, Schiefner-Rohs Mandy, & Lucke Ulrike (2017)**: Digital media and research-oriented teaching and learning—empirical insights into projects and teaching concepts. In: *Proceedings of the 25th Annual Meeting of the Society for Media in Science (GMW)*, September 5-8, 2017, Chemnitz, Germany: Waxmann. (Best Paper Award)
 
-- **Dehne Julian, Wiepke Axel, & Lucke Ulrike (2017)**: Evaluating e-learning - A comment on "Media will never influence learning". In: Christoph Igel, Carsten Ullrich, and Wessner Martin (eds.): Bildungsräume2017: Gesellschaft für Informatik Bonn, pp. 167-177.
+8. **Dehne Julian, Wiepke Axel, & Lucke Ulrike (2017)**: Evaluating e-learning—A comment on "Media will never influence learning". In: Christoph Igel, Carsten Ullrich, and Wessner Martin (Eds.): *Bildungsräume 2017*. Gesellschaft für Informatik Bonn, pp. 167-177.
 
-- **Zender Raphael, Dehne Julian, Geßner Hendrik, & Lucke Ulrike (2013)**: RouteMe - Routing in ad hoc networks as a pervasive learning game. In: i-com12(1), pp.45-52.
+9. **Dehne Julian, & Nguyen Thi (2017)**: Defining consistency in higher education. *EARLI 2017*, Tampere, August 2017. (Poster).
 
-## International Community
+10. **Dehne Julian, Nguyen Thi, & Lübcke Eileen (2017)**: A model of media-supported inquiry-based learning. *EARLI 2017*, Tampere, August 2017. (Poster).
 
-- **Dehne J., & Paaßen B. (2022)**: A conceptual graph-based model of creativity in learning. In: Frontiers in Education, (p. 851). Frontiers.
+11. **Dehne Julian, Nguyen Thi, & Lucke Ulrike (2016)**: Bridging the interinstitutional gap—Tracing lifelong skill evolution. In: *The Higher Education Conference (HEC)*. (Presentation).
 
-- **Dehne Julian, & Nguyen Thi (2017)**: Defining consistency in higher education. EARLI 2017, Tampere, August 2017. (Poster).
+12. **Dehne Julian, & Lucke Ulrike (2015)**: An infrastructure for cross-platform competence-based assessment. In: *Facing the Challenges of Assessing 21st Century Skills in the Newly Emerging Educational Ecosystems (ECTEL)*, Toledo, pp. 29-38.
 
-- **Dehne Julian, Nguyen Thi, & Lübcke Eileen (2017)**: A model of media-supported inquiry-based learning. EARLI 2017, Tampere, August 2017. (Poster).
-
-- **Dehne Julian, Nguyen Thi, & Lucke Ulrike (2016)**: Bridging the interinstitutional gap - Tracing lifelong skill evolution. In: The Higher Education Conference (HEC). (Presentation).
-
-- **Dehne Julian, & Lucke Ulrike (2015)**: An infrastructure for cross-platform competence-based assessment. In: Facing the Challenges of Assessing 21st Century Skills in the Newly Emerging Educational Ecosystems (ECTEL), Toledo, pp. 29-38.
+13. **Zender Raphael, Dehne Julian, Geßner Hendrik, & Lucke Ulrike (2013)**: RouteMe—Routing in ad hoc networks as a pervasive learning game. In: *i-com 12*(1), pp. 45-52.
 
 

@@ -29,10 +29,10 @@ cvevents <- function(tbl, when, what, where, details) {
     command_start <- "\\cvevent"
 
     res <- paste0(
-        command_start, "{", tbl[[when]], "}", 
+        command_start, "{", tbl[[when]], "}",
         "{", tbl[[what]], "}",
         "{", tbl[[where]], "}")
-    
+
     tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
     res <- paste0(res, "{",tbl[[details]],"}")
 
@@ -81,4 +81,42 @@ tibble::tribble(
     "BA in European Studies", "University of Passau", "Passau, Germany", "April. 2007 - Sep. 2009", c("Thesis: Innenpolitische Bedingtheit europäischer Migrationspolitik", "Studying the Multilevel European System and how the Regions influenced the Amsterdam Treaty")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```
+
+# Languages
+```{r }
+#| label: language_skills
+#| output: asis
+tibble::tribble(
+    ~category, ~languages, ~when, ~where,
+    "Fluent",
+    c("German: Mother tongue, fluent",
+      "English: Fluent in spoken and written (TOEFL CBS 283/300)"),
+    "", "Germany/Canada",
+    "Advanced",
+    c("French: Advanced (Certificate from the University of Geneva)",
+      "Spanish: Advanced (Certificate from Maccu Picchu Spanish School)"),
+    "", "Switzerland/Peru",
+    "Beginner",
+    c("Polish: Beginner (A1) (Unicert A1)"),
+    "", "Germany",
+    "Classics",
+    c("Latin: Proficient (Latinum)",
+      "Ancient Greek: Proficient (Graecum)"),
+    "", "Germany"
+) |>
+    cvevents(when = "when", what = "category", where = "where", details = "languages")
+
+```
+# Shortlisted
+```{r }
+#| label: shortlisted_applications
+#| output: asis
+tibble::tribble(
+    ~category, ~details, ~when, ~where,
+   "Professorship", c("2nd Place TU Vienna CS Department", "4th Place Max Planck Institute for Demography (Rostock)"), "2023", "Germany/Austria",
+   "Academic Councillor", c("2nd Place University of Hamburg CS Department"), "2020", "Germany/Austria"
+) |>
+    cvevents(when = "when", what = "category", where = "where", details = "details")
+
 ```
