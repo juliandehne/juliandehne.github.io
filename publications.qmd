@@ -18,8 +18,7 @@
 
 \newpage
 
-
-# Combined Publications
+## Selected Papers
 
 1. **Dehne J., Daikeler J., Silber H., Rammstedt B., Keusch F., Kreuter F., Blumenberg J., Lechner C., Römer L., Schoch D., Siegers P., Jünger S., & Weller K. (2024)**: Die Vermittlung von Best Practices zur Messung von Datenqualität in den quantitativen Sozialwissenschaften. In: Steinmann L. (Ed.): *Proceedings of the INFORMATIK 2024, Workshop Data Science Community*. Wiesbaden: Gesellschaft für Informatik e.V.
 
@@ -37,9 +36,9 @@
 
 8. **Dehne Julian, Wiepke Axel, & Lucke Ulrike (2017)**: Evaluating e-learning—A comment on "Media will never influence learning". In: Christoph Igel, Carsten Ullrich, and Wessner Martin (Eds.): *Bildungsräume 2017*. Gesellschaft für Informatik Bonn, pp. 167-177.
 
-9. **Dehne Julian, & Nguyen Thi (2017)**: Defining consistency in higher education. *EARLI 2017*, Tampere, August 2017. (Poster).
+9. **Dehne Julian, & Nguyen Thi (2017)**: Defining consistency in higher education. *EARLI 2017*, Tampere, August 2017.
 
-10. **Dehne Julian, Nguyen Thi, & Lübcke Eileen (2017)**: A model of media-supported inquiry-based learning. *EARLI 2017*, Tampere, August 2017. (Poster).
+10. **Dehne Julian, Nguyen Thi, & Lübcke Eileen (2017)**: A model of media-supported inquiry-based learning. *EARLI 2017*, Tampere, August 2017.
 
 11. **Dehne Julian, Nguyen Thi, & Lucke Ulrike (2016)**: Bridging the interinstitutional gap—Tracing lifelong skill evolution. In: *The Higher Education Conference (HEC)*. (Presentation).
 

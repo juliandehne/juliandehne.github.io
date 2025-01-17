@@ -115,7 +115,7 @@ tibble::tribble(
 tibble::tribble(
     ~category, ~details, ~when, ~where,
    "Professorship", c("2nd Place TU Vienna CS Department", "4th Place Max Planck Institute for Demography (Rostock)"), "2023", "Germany/Austria",
-   "Academic Councillor", c("2nd Place University of Hamburg CS Department"), "2020", "Germany/Austria"
+   "Academic Councillor", c("2nd Place University of Hamburg CS Department"), "2020", "Germany"
 ) |>
     cvevents(when = "when", what = "category", where = "where", details = "details")
 
