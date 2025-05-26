@@ -61,7 +61,7 @@
       <option name="workingDir" value="$PROJECT_DIR$/applications" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="render --no-cache --profile website" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
@@ -119,6 +119,26 @@
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$PROJECT_DIR$/applications" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="render index.qmd --to pdf" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="Qmd" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="build rse ds" />
+      <option name="output" value="C:\Users\julian.dehne\Documents\Quarto\IdeaProjects\juliandehne.github.io\_site\publications\pub_rse_ds" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="quarto" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="Recently Changed Files" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$PROJECT_DIR$/publications/pub_rse_ds" />
       <envs />
     </TaskOptions>
   </component>
