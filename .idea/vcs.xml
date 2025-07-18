@@ -5,7 +5,9 @@
     <mapping directory="$PROJECT_DIR$/applications" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/publications" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/publications/external/RSE-Masters" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/publications/external/RSE-Masters/ds_thesis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/publications/external/RSE-Masters/external/bibliography" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/publications/external/RSECurriculum4NaturalScience" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/publications/pub_coalition_programs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/publications/pub_rse_ds" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/publications/pub_sga" vcs="Git" />
