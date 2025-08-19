@@ -16,7 +16,7 @@ a research software engineer.
 - [My Publications](publications.qmd)
 - [My Courses](teaching.qmd)
 - [My Software](software.qmd)
-- [Work in Progress]()
+- [Work in Progress](current.qmd)
 
 To get more detailed information about me, please go to the [About Me](about.qmd) page.
 Don't follow me on Twitter.
