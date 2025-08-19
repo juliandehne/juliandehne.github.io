@@ -1,24 +1,12 @@
 # Publications
 
-
-## Preprints
-
-- **Riethmüller, F., Dehne, J., & Al-Gaddooa, D. (2024)**: Which Identities Are Mobilized: Towards an automated detection of social group appeals in political texts. arXiv preprint arXiv:2405.01904.
-
-- **Dehne, J., & Gold, V. (2023)**: Strategic Communication and Deliberation on Climate Change of different Actor Groups using Twitter. arXiv preprint arXiv:2306.07144.
-
-- **Dehne, J., & Gold, V. (2023)**: Consistent, Central and Comprehensive Participation on Social Media. arXiv preprint arXiv:2306.07048.
-
-
-## Under Review
-- **Dehne J., & Gold V. (2024, under review)**: Comparing the Effectiveness of Different User Moderation Strategies for Deliberation on Twitter. In: Journal of Political Communication.
-
-- **Dehne J., & Gold V. (2024, under review)**: Strategies for Deliberative Moderation in Social Media. In: Journal of Deliberative Democracy.
-
-
-\newpage
-
 ## Selected Papers
+
+
+
+1. **Dehne, J., Christ, S., Goth, F., Grad, J.-N., Hagdorn, M., Thiele, J. P., von Waldow, H., Linxweiler, J.** (2025): Research Software Engineering for Natural Sciences. In: Herrmann, A. (Ed.): Softwaretechnik Trends, Volume 45 (3). Berlin: Gesellschaft für Informatik e.V.
+
+1. **Dehne, J., Thiele, J. P., Schöning-Stierand, K., Goth, F., Linxweiler, J., von Waldow, H., Lamprecht, A.-L. (2025)**: Comparing Research Software Engineering and Data Science Competences. In: Bernoth, J. (Ed.): *Proceedings of the INFORMATIK 2025, Workshop Research Data and Software Competences*. Potsdam: Gesellschaft für Informatik e.V.
 
 1. **Dehne J., Daikeler J., Silber H., Rammstedt B., Keusch F., Kreuter F., Blumenberg J., Lechner C., Römer L., Schoch D., Siegers P., Jünger S., & Weller K. (2024)**: Die Vermittlung von Best Practices zur Messung von Datenqualität in den quantitativen Sozialwissenschaften. In: Steinmann L. (Ed.): *Proceedings of the INFORMATIK 2024, Workshop Data Science Community*. Wiesbaden: Gesellschaft für Informatik e.V.
 
@@ -47,3 +35,6 @@
 13. **Zender Raphael, Dehne Julian, Geßner Hendrik, & Lucke Ulrike (2013)**: RouteMe—Routing in ad hoc networks as a pervasive learning game. In: *i-com 12*(1), pp. 45-52.
 
 
+## Accepted but not available yet
+
+1. **Dehne, J., Daikeler J. et al. Die KODAQS Tools – Eine neue Ressource zur Beurteilung der Qualität von Forschungsdaten (2025)** Publizistik. Springer.

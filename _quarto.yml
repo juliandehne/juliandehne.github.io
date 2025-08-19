@@ -4,6 +4,8 @@ project:
   title: Julian Dehne
   render:
     - "*.qmd"
+    - "!publications/"
+    - "!applications/"
 
 website:
   title: "Julian Dehne"
@@ -12,6 +14,8 @@ website:
     right:
       - text: "Home"
         href: index.qmd
+      - text: "Current Work"
+        href: current.qmd
       - text: "CV"
         href: cv_old.qmd
       - text: "CV Download"
@@ -47,12 +51,11 @@ author:
     orcid: 0000-0001-9265-9619
     url: https://www.researchgate.net/profile/Julian-Dehne
     email: julian.dehne@gesis.org
-    twitter: "@DehneJulian"
     affiliations:
-      - name: GESIS,  Leibniz-Institut für Sozialwissenschaften
-        address: B4-5, 68159 Mannheim
-      - name: University of Göttingen
-        address: Goßlerstraße 19, 37073 Göttingen
+      - name: Gesellschaft für Informatik
+        address: Weydingerstraße 14-16, 10178 Berlin
+      - name: University of Potsdam
+        address: An der Bahn 2,  14476 Potsdam
 
 profile:
   default: website

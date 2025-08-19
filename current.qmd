@@ -1,0 +1,27 @@
+# Current Work
+
+- Leading RSE working group at [German Computer Society](https://gi.de/)
+- Developing / Writing a [Master Curriculum Research Software Engineering](https://github.com/the-teachingRSE-project/RSE-Masters)
+- Paper projects with the teaching RSE group of [deRSE](https://de-rse.org/de/working_groups.html)
+
+
+# Dormant Projects
+
+If you are interested in co-authoring one of the below papers to get them across the finish line, get in touch!
+
+## Finished Papers (unpublished)
+
+- **Dehne J., & Gold V. (2024)**: Comparing the Effectiveness of Different User Moderation Strategies for Deliberation on Twitter. [download](papers/mod_mining.pdf)
+
+- **Dehne J., & Gold V. (2024)**: Strategies for Deliberative Moderation in Social Media. [download](papers/jdd_1903.pdf)
+
+- **Dehne J., & Gold V. (2024)**: Behavioural Scripts and the Effect of User Moderation on Social Media [download](papers/EPSA_23_final.pdf)
+
+## Preprints
+
+- **Riethmüller, F., Dehne, J., & Al-Gaddooa, D. (2024)**: Which Identities Are Mobilized: Towards an automated detection of social group appeals in political texts. [arXiv preprint arXiv:2405.01904](https://arxiv.org/pdf/2405.01904).
+
+- **Dehne, J., & Gold, V. (2023)**: Strategic Communication and Deliberation on Climate Change of different Actor Groups using Twitter. [arXiv preprint arXiv:2306.07144](https://arxiv.org/abs/2306.07144).
+
+- **Dehne, J., & Gold, V. (2023)**: Consistent, Central and Comprehensive Participation on Social Media. [arXiv preprint arXiv:2306.07048](https://arxiv.org/pdf/2306.07048).
+

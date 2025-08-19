@@ -16,8 +16,9 @@ a research software engineer.
 - [My Publications](publications.qmd)
 - [My Courses](teaching.qmd)
 - [My Software](software.qmd)
+- [Work in Progress]()
 
 To get more detailed information about me, please go to the [About Me](about.qmd) page.
-Follow me on Twitter: [@DehneJulian](https://twitter.com/DehneJulian)
+Don't follow me on Twitter.
 
 :::

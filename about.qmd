@@ -8,7 +8,7 @@ After completing a BA in European Studies at the University of Passau, I sought 
 
 ## Work
 
-Following my PhD, I briefly joined Humboldt University in Berlin, where I co-authored one of the first conceptual papers on fostering creativity through e-learning. Subsequently, I decided to return to the social sciences, accepting a PostDoc position at the University of Göttingen in the CSS field. Here, our team has been developing an innovative chatbot designed to facilitate deliberation on social media, which is nearing operational functionality.
+Following my PhD, I accepted a PostDoc position at the University of Göttingen in the Computational Social Science field. Here, our team has developed a chatbot that can moderate social media discussions trying to make them more deliberative. Unfortunately, Twitter/Musk crashed the scientific experiment in the middle of its lifespan. After that I have worked as a Research Software Engineer with GESIS, and now I am orchestrating the effort to pilot a master curriculum for Research Software Engineering.
 
 # Hobbies
 
