@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.42">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Julian Dehne">
 
-<title>Julian Dehne – software</title>
+<title>software – Julian Dehne</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bf19b75f51ea680c8de03e84aa65eabd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,6 +92,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./current.html"> 
+<span class="menu-text">Current Work</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv_old.html"> 
@@ -150,10 +154,10 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            GESIS, Leibniz-Institut für Sozialwissenschaften
+            Gesellschaft für Informatik
           </p>
         <p class="affiliation">
-            University of Göttingen
+            University of Potsdam
           </p>
       </div>
   </div>
@@ -172,6 +176,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="software" class="level1">
 <h1>Software</h1>
+<section id="kodaqs-toolbox" class="level2">
+<h2 class="anchored" data-anchor-id="kodaqs-toolbox">KODAQs Toolbox</h2>
+<p>At GESIS, I am responsible for developing a platform that consolidates open educational resources (OER) focused on data quality. The <a href="https://kodaqs-toolbox.gesis.org">KODAQS TOOLBOX</a> employs a sophisticated transformation pipeline, enabling OER to be created independently on GitHub using various technology stacks while preserving a cohesive look and feel across a unified website.</p>
+</section>
 <section id="delab---a-chatbot-research-environment-for-online-deliberation" class="level2">
 <h2 class="anchored" data-anchor-id="delab---a-chatbot-research-environment-for-online-deliberation">Delab - A Chatbot Research Environment for Online Deliberation</h2>
 <p>In Göttingen Valentin Gold and me developed a <a href="https://github.com/juliandehne/delab">toolchain</a> that can download live discussions on social media to be presented for human-in-the-loop coders. This allowed us to test different moderation strategies for the chatbot to improve social media discussion.</p>
@@ -186,21 +194,22 @@ ul.task-list li input[type="checkbox"] {
 <img src="img/ma_services.jpg" id="fig-foo" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-foo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="fl-trail---supporting-inquiry-based-learning-in-higher-education" class="level2">
 <h2 class="anchored" data-anchor-id="fl-trail---supporting-inquiry-based-learning-in-higher-education">FL-TRAIL - Supporting Inquiry-Based Learning in Higher Education</h2>
-<p>During my PhD I developed <a href="https://github.com/juliandehne/fltrail">FL-Trail</a> tool that supports student-centered learning.</p>
+<p>During my PhD I developed the <a href="https://github.com/juliandehne/fltrail">FL-Trail</a> tool that supports student-centered learning.</p>
 <p><img src="img/fltrail.png" class="img-fluid"></p>
-<div style="page-break-after: always;"></div>
 </section>
 <section id="libraries" class="level2">
 <h2 class="anchored" data-anchor-id="libraries">Libraries</h2>
 <ul>
 <li><a href="https://pypi.org/project/delab-trees/">delab-trees</a>: A python library to analyze social media conversation trees</li>
 <li><a href="https://pypi.org/project/delab-socialmedia/">delab-socialmedia</a> A python library to download social media conversation trees, download daily conversation samples, and post on social media</li>
+<li><a href="https://pypi.org/project/socialgroupdetection/0.0.1/">socialgroupdetection</a> A python library to detect social group appeals in political texts</li>
 </ul>
 </section>
 <section id="other-involvements" class="level2">
@@ -297,8 +306,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -409,7 +416,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
