@@ -11,6 +11,9 @@ If you are interested in co-authoring one of the below papers to get them across
 
 ## Finished Papers (unpublished)
 
+
+- **Dehne J., Al-Gaddooa, D. & Gold V. (2025)**: Who wins the coalition agreements? Detection the handwriting of parties in coalition agreements. [download](papers/coalitions.pdf)
+
 - **Dehne J., & Gold V. (2024)**: Comparing the Effectiveness of Different User Moderation Strategies for Deliberation on Twitter. [download](papers/mod_mining.pdf)
 
 - **Dehne J., & Gold V. (2024)**: Strategies for Deliberative Moderation in Social Media. [download](papers/jdd_1903.pdf)
