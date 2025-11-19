@@ -58,7 +58,9 @@ I completed my Ph.D. at the University of Potsdam, where I developed methods for
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Research Software Engineer", "GESIS - Leibniz Institute for the Social Sciences", "May 2024 - Present",
+    "Team Lead Research Software Engineering", "GI - German Computer Science Society", "April 2025 - Present",
+    "RSE, Department of Computational Social Science", c("Developing a Research Software Engineering Master Curriculum", "Research on Research Software", "Community Building and Science Policy for the new RSE field"),
+    "Research Software Engineer", "GESIS - Leibniz Institute for the Social Sciences", "May 2024 - April 2025",
     "Transparent Social Analytics, Department of Computational Social Science", c("Development Lead of a project to build an Open Science platform with reusable code and tutorials", "Research on Data Quality Standards", "Implementation of tools to enhance reproducibility and facilitate research with automated quality data checks"),
     "Post Doctoral Researcher", "University of Göttingen", "Aug. 2021 - May 2024",
     "Department of Methods in Social Sciences", c("Substitute Project Coordination","Development Lead  of the Delab-Framework", "Research on Deliberation on Social Media", "Constructing Human-In-The-Loop Experiments with Reddit and Twitter, NLP with Python"),
