@@ -4,3 +4,7 @@
 [submodule "publications"]
 	path = publications
 	url = git@github.com:juliandehne/publications.git
+[submodule "mylife"]
+	path = mylife
+	url = git@github.com:juliandehne/mylife.git
+	branch = master
