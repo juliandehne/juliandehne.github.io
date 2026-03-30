@@ -2,7 +2,7 @@
 
 ## Selected Papers
 
-
+1. **Dehne, J., Daikeler J. et al. Die KODAQS Tools – Eine neue Ressource zur Beurteilung der Qualität von Forschungsdaten (2025)** Publizistik. Springer.
 
 1. **Dehne, J., Christ, S., Goth, F., Grad, J.-N., Hagdorn, M., Thiele, J. P., von Waldow, H., Linxweiler, J.** (2025): Research Software Engineering for Natural Sciences. In: Herrmann, A. (Ed.): Softwaretechnik Trends, Volume 45 (3). Berlin: Gesellschaft für Informatik e.V.
 
@@ -13,6 +13,8 @@
 2. **Dehne J., & Paaßen B. (2022)**: A conceptual graph-based model of creativity in learning. In: *Frontiers in Education*, (p. 851). Frontiers.
 
 3. **Dehne J., Strickroth S., & Lucke U. (2020)**: FL-Trail: digitally supporting group-based inquiry learning. In: Zender R., Ifenthaler D., Leonhardt T., & Schumacher C. (Eds.): *DELFI 2020 - Die 18. Fachtagung Bildungstechnologien der Gesellschaft für Informatik e.V.* Bonn: Gesellschaft für Informatik e.V. (pp. 319-330).
+
+1. **Strickroth, S.; Dehne, J. (2020)**: Digitale Unterstützung der (kooperativen) Unterrichtsplanung. Auf dem Weg zu automatischen Empfehlungen und Analysen auf Basis von ähnlichen Lehrzielen. In: K. Kaspar, M. Becker-Mrotzek, S. Hofhues, J. König, D. Schmeinck (Hrsg.): Bildung, Schule, Digitalisierung. Waxmann: Münster, S. 165. https://doi.org/10.31244/9783830992462
 
 4. **Dehne Julian, Knoth Alexander, & Lucke Ulrike (2019)**: Strengthening the study entry phase research-based learning and the use of digital media. In: Gabi Reinmann, Eileen Lübcke, and Anna Heudorfer (Eds.): *Research-based learning in the study entry phase*. Wiesbaden: Springer Fachmedien Wiesbaden.
 
@@ -35,6 +37,4 @@
 13. **Zender Raphael, Dehne Julian, Geßner Hendrik, & Lucke Ulrike (2013)**: RouteMe—Routing in ad hoc networks as a pervasive learning game. In: *i-com 12*(1), pp. 45-52.
 
 
-## Accepted but not available yet
 
-1. **Dehne, J., Daikeler J. et al. Die KODAQS Tools – Eine neue Ressource zur Beurteilung der Qualität von Forschungsdaten (2025)** Publizistik. Springer.
