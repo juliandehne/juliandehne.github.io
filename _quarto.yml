@@ -57,5 +57,9 @@ author:
       - name: University of Potsdam
         address: An der Bahn 2,  14476 Potsdam
 
+
+bibliography: references.bib
+csl: https://www.zotero.org/styles/ieee
+
 profile:
   default: website
