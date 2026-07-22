@@ -1,6 +1,10 @@
 # Software
 
 
+## rse-code-annotations - A Framework for Annotating Research Code
+
+An open-source framework for annotating research code in empirical software-engineering studies, used in my corpus work on what research software a community actually produces. [rse-code-annotations](https://github.com/juliandehne/rse_code_annotations) is MIT-licensed.
+
 ## KODAQs Toolbox
 
 At GESIS, I am responsible for developing a platform that consolidates open educational resources (OER) focused on data quality. The [KODAQS TOOLBOX](https://kodaqs-toolbox.gesis.org) employs a sophisticated transformation pipeline, enabling OER to be created independently on GitHub using various technology stacks while preserving a cohesive look and feel across a unified website.

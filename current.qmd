@@ -1,7 +1,10 @@
 # Current Work
 
-- Leading RSE working group at [German Computer Society](https://gi.de/)
-- Developing / Writing a [Master Curriculum Research Software Engineering](https://github.com/the-teachingRSE-project/RSE-Masters)
+- Group Lead for Research Software Engineering at the [German Informatics Society (GI)](https://gi.de/), holding the scientific direction of the [FG RSE](https://fg-rse.gi.de/)
+- Directing the [Master Curriculum Research Software Engineering](https://github.com/the-teachingRSE-project/RSE-Masters) (RSE-Master 2025), and representing that work in the [Skills and Training for Research Software (STaRS) Forum](https://www.researchsoft.org/forums/stars-forum/) of the Research Software Alliance
+- Project lead of the GI **RSE Award** for outstanding research software, and PI for the GI in **FutuRSI** (Future of Sustainable Research Software Infrastructure)
+- Writing a habilitation on methodological research integrity for research software (the **RIGHT** framework); first chapter available as a [preprint](https://arxiv.org/abs/2603.15366)
+- Teaching RSE as a guest lecturer at RWTH Aachen, with two further RSE courses at the University of Potsdam in the coming semester
 - Paper projects with the teaching RSE group of [deRSE](https://de-rse.org/de/working_groups.html)
 
 
@@ -21,6 +24,8 @@ If you are interested in co-authoring one of the below papers to get them across
 - **Dehne J., & Gold V. (2024)**: Behavioural Scripts and the Effect of User Moderation on Social Media [download](papers/EPSA_23_final.pdf)
 
 ## Preprints
+
+- **Dehne, J. (2026)**: To be FAIR or RIGHT? Methodological Research Integrity Given Human-facing Technologies using the example of Learning Technologies. [arXiv preprint arXiv:2603.15366](https://arxiv.org/abs/2603.15366). Chapter of the habilitation in preparation.
 
 - **Riethmüller, F., Dehne, J., & Al-Gaddooa, D. (2024)**: Which Identities Are Mobilized: Towards an automated detection of social group appeals in political texts. [arXiv preprint arXiv:2405.01904](https://arxiv.org/pdf/2405.01904).
 
