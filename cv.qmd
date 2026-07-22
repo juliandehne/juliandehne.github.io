@@ -1,6 +1,6 @@
 ---
 author: Julian Dehne
-title: Learning Technologies and Computational Social Sciences
+title: Research Software Engineering, Learning Technologies and Computational Social Sciences
 format:
   classic-cv-pdf: default
 cvfooter:
@@ -10,115 +10,164 @@ cvcolor: 58748F #without `#`
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - title: Status
-    left: Research Software Engineer, GESIS
-    right: Cologne, Germany
+    left: Group Lead Research Software Engineering, GI
+    right: Berlin, Germany
   - title: Field
-    left: Software Engineering, Social Sciences, Education
+    left: Research Software Engineering, Software Engineering, Education
     right: https://juliandehne.github.io
   - title: Techs
     left: Python, Scala, Java, R, Transformers
     right: julian.dehne@gmail.com
 execute:
-  echo: false
+  enabled: false
 ---
-
-```{r}
-#| label: cvevents
-cvevents <- function(tbl, when, what, where, details) {
-
-    command_start <- "\\cvevent"
-
-    res <- paste0(
-        command_start, "{", tbl[[when]], "}",
-        "{", tbl[[what]], "}",
-        "{", tbl[[where]], "}")
-
-    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
-    res <- paste0(res, "{",tbl[[details]],"}")
-
-    cat(res, sep = "\n")
-}
-```
 
 # Summary
 
+I am a computer scientist working in Research Software Engineering (RSE). I am currently Group Lead for RSE at the Gesellschaft für Informatik (GI), where I hold the scientific direction of the Special Interest Group on Research Software Engineering, direct the national RSE master's curriculum project and lead the GI RSE Award for outstanding research software.
 
-I am a group lead for Research Software Engineering (RSE) at the German Computer Society, with a strong background in developing open science platforms, research software, and tools to enhance reproducibility and data quality in social sciences. My current role involves leading a project to develop a RSE master program and accompanying research.
+Before that I was a Research Software Engineer at GESIS -- Leibniz Institute for the Social Sciences, where I was development lead of the KODAQS Toolbox, an open science platform for reusable code and reproducible tutorials, and worked on data quality standards and automated reproducibility checks.
 
-Previously, I worked as a Postdoctoral Researcher at the University of Göttingen, focusing on social media deliberation, conducting human-in-the-loop experiments with platforms like Reddit and Twitter, and applying NLP techniques in Python. At Humboldt University Berlin, I researched text-based creativity detection using machine learning and analyzed large datasets from E-learning platforms.
-
-I completed my Ph.D. at the University of Potsdam, where I developed methods for group formation, built a semantic database of learning goals, and created a framework for inquiry-based learning and evaluation methodologies for learning technologies. My expertise spans natural language processing, machine learning, data quality, and educational technologies.
-
+Earlier I was a postdoctoral researcher at the University of Göttingen (social media deliberation, human-in-the-loop experiments with Reddit and Twitter, NLP with transformer models) and at Humboldt-Universität zu Berlin (machine learning for the detection of creativity in text). I did my doctorate in computer science at the University of Potsdam, where I built a framework for inquiry-based learning, algorithms for group formation, a semantic competency database and an evaluation methodology for learning technologies.
 
 # Experience
 
+```{=latex}
+\cvevent{since 2025}{Group Lead Research Software Engineering}{Gesellschaft für Informatik (GI)}{%
+{Scientific direction of the Special Interest Group on Research Software Engineering (FG RSE)},
+{Development of a national RSE master's curriculum (teachingRSE)},
+{Project lead of the GI RSE Award and PI for the GI in FutuRSI},
+{Research on research software, community building and science policy for the emerging field}}
 
-```{r}
-#| label: experience
-#| output: asis
-tibble::tribble(
-    ~role, ~institution, ~dates, ~details, ~tasks,
-    "Group Lead Research Software Engineering", "GI - German Computer Science Society", "April 2025 - Present",
-    "RSE, Department of Computational Social Science", c("Developing a Research Software Engineering Master Curriculum", "Research on Research Software", "Community Building and Science Policy for the new RSE field"),
-    "Research Software Engineer", "GESIS - Leibniz Institute for the Social Sciences", "May 2024 - April 2025",
-    "Transparent Social Analytics, Department of Computational Social Science", c("Development Lead of a project to build an Open Science platform with reusable code and tutorials", "Research on Data Quality Standards", "Implementation of tools to enhance reproducibility and facilitate research with automated quality data checks"),
-    "Post Doctoral Researcher", "University of Göttingen", "Aug. 2021 - May 2024",
-    "Department of Methods in Social Sciences", c("Substitute Project Coordination","Development Lead  of the Delab-Framework", "Research on Deliberation on Social Media", "Constructing Human-In-The-Loop Experiments with Reddit and Twitter, NLP with Python"),
-    "Post Doctoral Researcher", "Humboldt University Berlin", "Apr. 2020 - Feb. 2021", "Chair of Learning Technologies", c("Developing new methods to detect creativity in texts", "Gathering and analyzing large datsets from E-learning Platforms"),
-    "Ph.D. Candidate", "University of Potsdam", "Oct. 2014 - Oct. 2020", "Chair of Complex Computational Media Applications", c("Lead Developer of a Framework for Inquiry Based Learning", "Developing Algorithms to support Group Formation", "Construction of a Semantic Database of Learning Goals", "Developing a Methodology for the Evaluation of E-Learning", "Co-Write Project Proposals and Reports", "Active Member of the GI Junior Researcher Group")
-) |>
-    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+\cvevent{2024 -- 2025}{Research Software Engineer}{GESIS -- Leibniz Institute for the Social Sciences}{%
+{Development lead of the KODAQS Toolbox, an open science platform for reusable code and reproducible tutorials},
+{Research on data quality standards in the Department of Computational Social Science},
+{Implementation of automated data quality and reproducibility checks}}
+
+\cvevent{2021 -- 2024}{Postdoctoral Researcher}{University of Göttingen}{%
+{Project lead and development lead of the Delab framework, Department of Methods in the Social Sciences},
+{Human-in-the-loop experiments on social media deliberation with Reddit and Twitter},
+{NLP with transformer models, run in part on cluster infrastructure},
+{Substitute project coordination}}
+
+\cvevent{2020 -- 2021}{Postdoctoral Researcher}{Humboldt-Universität zu Berlin}{%
+{Chair of Learning Technologies},
+{Machine learning methods for the detection of creativity in text},
+{Gathering and analysing large datasets from e-learning platforms}}
+
+\cvevent{2014 -- 2020}{Research Assistant and Doctoral Candidate}{University of Potsdam}{%
+{Chair of Complex Multimedia Application Architectures},
+{Lead developer of the FL-Trail framework for inquiry-based learning},
+{Algorithms to support group formation and a semantic database of competencies},
+{Methodology for the evaluation of e-learning},
+{Co-author of project proposals and reports, active member of the GI junior researcher group}}
 ```
+
 \newpage
 
 # Education
 
-```{r }
-#| label: education
-#| output: asis
-tibble::tribble(
-    ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Computer Science", "University of Potsdam", "Potsdam, Germany", "Nov. 2014 - Sep. 2020", c("Thesis: Possibilities and Limitations of Media Support for Inquiry-Based Learning", "Explores the use of computer technology to support inquiry-based learning in higher education"),
-    "BA and MA in Computer Science, Political Science and Education", "University of Potsdam", "Potsdam, Germany", "Okt. 2009 - Okt. 2014", c("Thesis: An Intelligent Competence Database", "Implementation and Evaluation of a Learning Outcome Storage connected to Portfolio Learning"),
-    "BA in European Studies", "University of Passau", "Passau, Germany", "April. 2007 - Sep. 2009", c("Thesis: Innenpolitische Bedingtheit europäischer Migrationspolitik", "Studying the Multilevel European System and how the Regions influenced the Amsterdam Treaty")
-) |>
-    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```{=latex}
+\cvevent{2014 -- 2021}{Dr. rer. nat. in Applied Computer Science}{University of Potsdam}{%
+{Graded \textit{magna cum laude}, certificate of 1 February 2021},
+{Thesis: Possibilities and Limitations of Media Support for Inquiry-Based Learning},
+{Explores the use of computer technology to support inquiry-based learning in higher education (doi:10.25932/publishup-49789)}}
+
+\cvevent{2012 -- 2014}{Master of Education}{University of Potsdam}{%
+{Overall grade 1.2, awarded with distinction and placed among the top graduates of the year},
+{Two-subject degree with Computer Science as one of the two majors (alongside Political Education), grade in Computer Science 1.1},
+{Thesis in Computer Science: An Ontology-Based Competency Database for E-Portfolio Systems, graded 1.0}}
+
+\cvevent{2009 -- 2012}{Bachelor of Education}{University of Potsdam}{%
+{Two-subject degree with Computer Science as one of the two majors},
+{Both Potsdam degrees carry the full formal qualification to teach Computer Science at upper-secondary level (Gymnasium)}}
+
+\cvevent{2007 -- 2009}{B.A. in European Studies}{University of Passau}{%
+{Certificate of 2 November 2009},
+{Thesis: Innenpolitische Bedingtheit europäischer Migrationspolitik},
+{Studying the multilevel European system and how the regions influenced the Amsterdam Treaty}}
+```
+
+# Teaching Appointments
+
+```{=latex}
+\cvevent{since 2026}{Guest Lecturer}{RWTH Aachen University}{%
+{Pilot courses of the national RSE master's curriculum (teachingRSE)},
+{Research Methods and Methodology for Research Software Engineers},
+{RSE Management and Communication}}
+
+\cvevent{from 2026/27}{Guest Lecturer}{University of Potsdam}{%
+{Two RSE courses, Responsible RSE and Software Evaluation},
+{Standing in for Prof. Anna-Lena Lamprecht during her research sabbatical}}
+
+\cvevent{2014 -- 2024}{Seminars and Lectures}{Universities of Potsdam and Göttingen}{%
+{Seminars and lectures on learning technologies and social science methods},
+{Tutorials in Applied Logic and in the Didactics of Computer Science}}
+```
+
+# Service and Awards
+
+```{=latex}
+\cvevent{2026}{Programme Committee Member}{deRSE26}{%
+{6th Conference for Research Software Engineering in Germany, Stuttgart}}
+
+\cvevent{since 2025}{Working Group Founder}{GI Special Interest Group RSE}{%
+{Founder of the Working Group on the Recognition of Research Software (AK Auszeichnung von Forschungssoftware)},
+{Organiser of its annual meeting in 2026}}
+
+\cvevent{2024}{Programme Committee Member}{CPSS at KONVENS}{%
+{Workshop on Computational Linguistics for the Political and Social Sciences}}
+
+\cvevent{2023}{Co-Organiser}{Sektionstagung Methoden der DVPW}{%
+{Conference of the Methods Section of the German Political Science Association}}
+
+\cvevent{since 2019}{Programme Committee Member}{DELFI}{%
+{The annual GI conference on educational technologies},
+{Reviewing for the German learning-technologies community every year since}}
+
+\cvevent{2017}{Best Paper Award}{TU Chemnitz}{%
+{Joint 15th DeLFI (GI) and 25th GMW conference},
+{Paper on digital media used for inquiry-based learning}}
+
+\cvevent{2014/15}{Distinction for the Best Graduates of the Year}{University of Potsdam}{%
+{Awarded for the Master of Education degree}}
+```
+
+# Shortlisted
+
+```{=latex}
+\cvevent{2023}{Professorship}{TU Vienna / MPI Rostock}{%
+{Second place, TU Vienna, Faculty of Informatics},
+{Fourth place, Max Planck Institute for Demographic Research, Rostock}}
+
+\cvevent{2020}{Academic Councillor}{University of Hamburg}{%
+{Second place, Department of Computer Science}}
+```
+
+# Memberships
+
+```{=latex}
+\cvevent{}{Professional Societies}{Germany}{%
+{Gesellschaft für Informatik: FG Research Software Engineering and FG E-Learning (AK Open Science)},
+{Deutsche Gesellschaft für Hochschuldidaktik: AG Forschendes Lernen},
+{Deutsche Vereinigung für Politikwissenschaft: Sektion Methoden}}
 ```
 
 # Languages
-```{r }
-#| label: language_skills
-#| output: asis
-tibble::tribble(
-    ~category, ~languages, ~when, ~where,
-    "Fluent",
-    c("German: Mother tongue, fluent",
-      "English: Fluent in spoken and written (TOEFL CBS 283/300)"),
-    "", "Germany/Canada",
-    "Advanced",
-    c("French: Advanced (Certificate from the University of Geneva)",
-      "Spanish: Advanced (Certificate from Maccu Picchu Spanish School)"),
-    "", "Switzerland/Peru",
-    "Beginner",
-    c("Polish: Beginner (A1) (Unicert A1)"),
-    "", "Germany",
-    "Classics",
-    c("Latin: Proficient (Latinum)",
-      "Ancient Greek: Proficient (Graecum)"),
-    "", "Germany"
-) |>
-    cvevents(when = "when", what = "category", where = "where", details = "languages")
 
-```
-# Shortlisted
-```{r }
-#| label: shortlisted_applications
-#| output: asis
-tibble::tribble(
-    ~category, ~details, ~when, ~where,
-   "Professorship", c("2nd Place TU Vienna CS Department", "4th Place Max Planck Institute for Demography (Rostock)"), "2023", "Germany/Austria",
-   "Academic Councillor", c("2nd Place University of Hamburg CS Department"), "2020", "Germany"
-) |>
-    cvevents(when = "when", what = "category", where = "where", details = "details")
+```{=latex}
+\cvevent{}{Fluent}{Germany/Canada}{%
+{German: mother tongue},
+{English: fluent in spoken and written (TOEFL CBT 283/300)}}
 
+\cvevent{}{Advanced}{Switzerland/Peru}{%
+{French: advanced (certificate from the University of Geneva)},
+{Spanish: advanced (certificate from Maccu Picchu Spanish School)}}
+
+\cvevent{}{Beginner}{Germany}{%
+{Polish: beginner (A1, UNIcert)}}
+
+\cvevent{}{Classics}{Germany}{%
+{Latin: proficient (Latinum)},
+{Ancient Greek: proficient (Graecum)}}
 ```

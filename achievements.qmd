@@ -1,23 +1,33 @@
 # Academic Progress
 
-## Invited Talks for Professorship
+## Appointment Shortlists
 
-- 2nd to 3rd place at TU Wien for a professorship in the field of learning technologies
-- (ongoing) invited for a Julich professorship in Rostock in the field of computational social sciences (a bit surprising for me, too)
+- 2023: Professorship, TU Vienna, Faculty of Informatics — **second place**
+- 2023: Professorship, Max Planck Institute for Demographic Research, Rostock — fourth place
+- 2020: Academic Councillor (*Akademischer Rat*), University of Hamburg, Department of Computer Science — **second place**
 
-## Best Papers Awards
+## Awards
 
-- best paper at GMW for my paper on digital media used for inquiry-based learning
-- nominated best paper at DeLFI for my paper on starting a methodology for technology based learning
+- 2017: **Best Paper Award** at the joint 15th DeLFI (GI) and 25th GMW conference, TU Chemnitz, for my paper on digital media used for inquiry-based learning
+- Nominated for best paper at DeLFI for my paper on starting a methodology for technology based learning
+- 2014/15: **Distinction for the best graduates of the year**, University of Potsdam
+
+## Teaching Appointments
+
+- since 2026: Guest lecturer at **RWTH Aachen University** — pilot courses of the national RSE master curriculum (*teachingRSE*): *Research Methods and Methodology for Research Software Engineers* and *RSE Management and Communication*
+- from 2026/27: Guest lecturer at the **University of Potsdam** — *Responsible RSE* and *Software Evaluation*, standing in for Prof. Anna-Lena Lamprecht during her research sabbatical
 
 ## Memberships
 
-- [Gesellschaft für Informatik, Fachgruppe E-Learning](https://gi.de/)
+- [Gesellschaft für Informatik, Fachgruppe Research Software Engineering (RSE)](https://rse.gi.de/)
+- [Gesellschaft für Informatik, Fachgruppe E-Learning](https://gi.de/) (AK Open Science)
 - [Deutsche Gesellschaft für Hochschuldidaktik, Fachgruppe Forschendes Lernen](https://www.dghd.de/)
 - [Deutsche Vereinigung für Politikwissenschaften, Fachgruppe Methoden](https://www.dvpw.de/)
 
 ## Service
 
-- PC member of [DELFI](https://delfi-tagung.de/delfi-2024)
-- PC member of [CPSS](https://sites.google.com/view/cpss2024konvens/home-page)
+- since 2025: Founder of the Working Group on the Recognition of Research Software (*AK Auszeichnung von Forschungssoftware*) within the [GI Fachgruppe RSE](https://fg-rse.gi.de/), and organiser of its 2026 annual meeting
+- since 2019: PC member of [DELFI](https://delfi-tagung.de/delfi-2024), the annual GI conference on educational technologies
+- 2026: PC member of [deRSE26](https://events.hifis.net/event/2945/), the 6th Conference for Research Software Engineering in Germany
+- 2024: PC member of [CPSS](https://sites.google.com/view/cpss2024konvens/home-page) at KONVENS
 - Co-Organizer of Sektionstagung Methoden der DVPW (2023)
