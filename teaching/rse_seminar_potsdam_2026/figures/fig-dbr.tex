@@ -1,0 +1,26 @@
+% Logic of design-based research -- from pub_rse_methodology/dbr_uml.tex
+\documentclass[tikz,border=6pt]{standalone}
+\input{tikz-preamble.tex}
+\begin{document}
+    \begin{tikzpicture}[]
+
+        \node[initial] (start) {};
+        \node[action, right=of start] (analysis) {analysieren /\\ explorieren};
+        \node[action, below=of analysis] (design) {entwerfen /\\ konstruieren};
+        \node[action, below=of design] (testing) {testen /\\ verbessern};
+        \node[action, right=of testing] (evaluation) {evaluieren /\\ reflektieren};
+        \node[decision, below=of testing] (maturity){ausgereift?};
+        \node[action, below=of maturity] (summative) {summativ evaluieren};
+        \node[rsepic, right=of summative] (end) {\terminus};
+
+        \draw (start) -- (analysis);
+        \draw (analysis) -- (design);
+        \draw (design) -- (testing);
+        \draw (evaluation.north) |- (analysis.east);
+        \draw (testing) -- (maturity);
+        \draw (maturity) -- node[right] {[ja, Reifegrad erreicht]} (summative);
+        \draw (summative) -- (end);
+        \draw (maturity.east) -| node[pos=0.25,below] {[nein]} (evaluation.south);
+
+    \end{tikzpicture}
+\end{document}

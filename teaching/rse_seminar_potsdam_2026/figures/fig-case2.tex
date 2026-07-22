@@ -1,0 +1,27 @@
+% Case 2 causal DAG -- from pub_rse_methodology/formalization_short.tex
+% RS transforms the research context: new variables AND new interpretations.
+\documentclass[tikz,border=6pt]{standalone}
+\input{tikz-preamble.tex}
+\begin{document}
+    \begin{tikzpicture}[>=Stealth, node distance=18mm]
+
+        \tikzstyle{node}=[draw, rounded corners, align=center, inner sep=4pt,
+            every path/.style={shorten >=2pt, shorten <=2pt}]
+
+        \node[node] (RS) {$RS$\\Gruppenbildungs-\\algorithmus};
+        \node[node, below=of RS] (A) {$A$\\Zuweisungs-\\politik};
+        \node[node, left=of A] (X) {$X$\\Gruppen-\\zusammensetzung};
+        \node[node, right=of A] (G) {$G$\\Gruppen-\\dynamik};
+        \node[node, right=of G] (Yp) {$Y'$\\Lern-\\ergebnis};
+        \node[node, above=of G] (U) {$U$\\Lernenden-\\merkmale};
+
+        \draw[->] (RS) -- (A);
+        \draw[->] (X) -- (A);
+        \draw[->] (A) -- (G);
+        \draw[->] (G) -- (Yp);
+        \draw[->] (U) -- (G);
+        \draw[->] (U) -- (Yp);
+        \draw[->] (U) -- (X);
+
+    \end{tikzpicture}
+\end{document}

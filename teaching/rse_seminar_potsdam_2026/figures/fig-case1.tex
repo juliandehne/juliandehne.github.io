@@ -1,0 +1,22 @@
+% Case 1 causal DAG -- from pub_rse_methodology/formalization_short.tex
+% RS influences relationships between variables, variable roles stay stable.
+\documentclass[tikz,border=6pt]{standalone}
+\input{tikz-preamble.tex}
+\begin{document}
+    \begin{tikzpicture}[>=Stealth, node distance=18mm,
+        every path/.style={shorten >=2pt, shorten <=2pt}]
+
+        \tikzstyle{node}=[draw, rounded corners, align=center, inner sep=4pt]
+
+        \node[node] (RS) {$RS$\\Vokabel-\\App};
+        \node[node, below=of RS] (T) {$T$\\Übungs-\\intensität};
+        \node[node, right=of T] (Y) {$Y$\\Vokabel-\\score};
+        \node[node, above right=of T] (U) {$U$\\Lernenden-\\merkmale};
+
+        \draw[->] (RS) -- (T);
+        \draw[->] (T) -- (Y);
+        \draw[->] (U) -- (T);
+        \draw[->] (U) -- (Y);
+
+    \end{tikzpicture}
+\end{document}

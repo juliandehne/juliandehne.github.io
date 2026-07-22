@@ -1,0 +1,753 @@
+---
+title: "To be FAIR or to be RIGHT?"
+subtitle: "Methodische Validität in der Entwicklung menschzugewandter Forschungssoftware"
+author: "Julian Dehne"
+institute: "RSE-Seminar, Potsdam"
+date: "2026-07-23"
+format:
+    beamer:
+        keep-tex: true
+        colortheme: crane
+        fonttheme: structureitalicserif
+        aspectratio: 169
+        navigation: horizontal
+        pdf-engine: pdflatex
+        include-in-header:
+            - beamer-header.tex
+        latex-auto-install: false
+        section-titles: true
+tbl-colwidths: auto
+tables: true
+bibliography:
+    - right-reference.bib
+    - right-methods.bib
+    - rse_literature.bib
+---
+
+# Ausgangspunkt
+
+## Worum es geht
+
+::: {.columns}
+
+::: {.column width="55%"}
+
+**Forschungssoftware (RS)** ist heute Standardbestandteil des
+Forschungsprozesses [@brettResearchSoftwareEngineers2017a].
+
+Der RSE-Diskurs dreht sich fast vollständig um
+
+- **Reproduzierbarkeit** (FAIR4RS [@barkerIntroducingFAIRPrinciples2022a])
+- **Nachnutzbarkeit**
+- **Softwarequalität** im klassischen SE-Sinn
+
+Das sind alles Fragen der **Reliabilität**.
+
+:::
+
+::: {.column width="45%"}
+
+\vspace{1em}
+
+\begin{block}{These des Vortrags}
+Die Frage, ob die Software \emph{misst, was sie messen soll},
+also die \textbf{Validität}, ist im RSE-Diskurs weitgehend
+unbearbeitet --- und genau dort, wo Menschen die Software
+bedienen, wird sie kritisch.
+\end{block}
+
+:::
+
+:::
+
+---
+
+## Der blinde Fleck
+
+Die RSE- und Open-Science-Bewegung stammt aus dem *scientific computing*
+und damit aus den Naturwissenschaften [@dehne2025rse_natural_sciences].
+
+Dadurch sind ganze Felder vom Diskurs abgekoppelt:
+
+- Bildungstechnologien
+- Mensch-Computer-Interaktion
+- Computational Social Sciences
+
+Dort sind Menschen **gleichzeitig Nutzende der Software und
+Gegenstand der Forschung**. Die üblichen Modelle, Pipelines und
+Ideale lassen sich nicht übertragen, ohne die zugrundeliegenden
+Annahmen zu ändern.
+
+> "How to (better) organize software-centric scientific processes?"
+> --- offene Forschungsfrage des Feldes [@feldererInvestigatingResearchSoftware2025b]
+
+---
+
+## Analyseeinheit und Definitionen
+
+**Forschungssoftware** wird hier eng gefasst: Software, die *für eine
+bestimmte Studie oder Studiengruppe mit geplanter menschlicher Interaktion*
+entwickelt wurde --- eine Spezifikation von
+[@gruenpeterDefiningResearchSoftware2021].
+
+Bewusste Einschränkung auf Software, die noch **inkubiert** und noch keine
+Maintainer-Community gebildet hat. Damit liegt der Fokus auf der
+**Designphase**.
+
+\vspace{0.5em}
+
+**Forschungsparadigma** nach [@kuhnStructureScientificRevolutions1994]:
+symbolische Generalisierungen, Modelle, Werte, Best-Practice-Muster.
+
+Der Wissenschaftsrat [@wissenschaftsrat2012] unterscheidet
+*empirische*, *gestaltungsbasierte*, *hermeneutische* und
+*theoretische* Forschung.
+
+---
+
+## Gütekriterien: woher kommt der Maßstab?
+
+Die Sozialwissenschaften diskutieren diese Frage seit Jahrzehnten
+[@schnell1999methoden].
+
++-------------------+--------------------------------------------+------------------------------------+
+| Kriterium         | Bedeutung                                  | Status im RSE-Diskurs              |
++===================+============================================+====================================+
+| Reliabilität      | Wiederholte Messung ergibt dasselbe        | Gut abgedeckt (FAIR, Tests,        |
+|                   | Ergebnis                                   | Requirements)                      |
++-------------------+--------------------------------------------+------------------------------------+
+| Validität         | Das Instrument misst, was es messen soll   | **Weitgehend unbearbeitet**        |
++-------------------+--------------------------------------------+------------------------------------+
+| Objektivität      | Unabhängigkeit von der durchführenden      | Außerhalb des Scope dieser Arbeit  |
+|                   | Person                                     |                                    |
++-------------------+--------------------------------------------+------------------------------------+
+
+\vspace{0.5em}
+
+Klassisches Beispiel: Ein Fragebogen, der Antworten erzwingt, ist
+hoch **reliabel** und trotzdem wertlos --- er misst nicht die realen
+Tendenzen.
+
+---
+
+## Konstruktvalidität
+
+Nach [@schnell1999methoden, p.139] muss eine Studie
+
+1. die theoretischen Beziehungen zwischen den Konstrukten klar benennen
+2. diese Beziehungen empirisch beobachtbar machen
+3. die gefundenen Beziehungen interpretierbar halten
+4. bei neuen Konstrukten einen Erkenntnisgewinn über den Stand hinaus zeigen
+
+\vspace{1em}
+
+\begin{alertblock}{Der Kern des Problems}
+Bei menschzugewandter Forschungssoftware müssen \textbf{Software und
+ihre Nutzung gemeinsam} evaluiert werden. Die Usability kann zuverlässig
+hoch gemessen werden, während die intendierte Wirkung der Software auf
+die Zielgröße gar nicht eintritt.
+\end{alertblock}
+
+# Theorietransfer
+
+## Methode: geliehene Modelle
+
+Modelle, Werte und Best Practices können zwischen Disziplinen
+**übertragen** ("borrowed", [@henke_2025]) und als heuristische Analogie
+[@kornmesserWissenschaftstheorieEinfuehrung2020] für ein neues Feld
+rekonstruiert werden.
+
+\vspace{0.8em}
+
+\begin{block}{Explizites Auswahlkriterium statt freier Analogie}
+Ein Quellmodell wird nur importiert, wenn seine Herkunftsdisziplin eine
+etablierte, validierte Behandlung eines \textbf{Validitätsproblems}
+besitzt, die dem menschzugewandten RSE fehlt.
+\end{block}
+
+---
+
+## Was importiert wird --- und was nicht
+
+| Quelle | Beitrag zur Validität |
+|---|---|
+| Simulation | eingebauter synthetisch--empirischer Abgleich |
+| Design-Based Research | iterative Verfeinerung unter einem "what could be"-Ziel |
+| Empirische Sozialwissenschaft | Operationalisierung, Gütekriterien |
+
+\vspace{1em}
+
+\begin{alertblock}{Bewusst \emph{nicht} importiert}
+Wasserfall- und anforderungsbasierte SE-Modelle. Ihre Annahme stabiler,
+extern gegebener Anforderungen gilt nicht mehr, sobald Menschen
+gleichzeitig Nutzende und Forschungsgegenstand sind.
+\end{alertblock}
+
+---
+
+## Quellmodell 1: Simulation
+
+::: {.columns}
+
+::: {.column width="52%"}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{img/fig-simulation.pdf}
+\end{center}
+
+:::
+
+::: {.column width="48%"}
+
+\small
+
+Verallgemeinertes Modell nach
+[@drogoulMultiagentBasedSimulation2003].
+
+- Zielsystem $\rightarrow$ **Annahmen**
+- Annahmen $\rightarrow$ **Mechanismen**
+- Simulation erzeugt **synthetische** Ergebnisse
+- Parallel entstehen **empirische** Beobachtungen
+
+\vspace{0.4em}
+
+\begin{block}{Warum relevant?}
+\small Die Methode hat eine \textbf{operationale Definition von
+Validität}: valide genau dann, wenn die empirischen Daten den
+synthetischen in hohem Maße entsprechen. Und: RSE ist hier ein
+\emph{notwendiger} Schritt im Forschungsprozess.
+\end{block}
+
+:::
+
+:::
+
+---
+
+## Quellmodell 2: Design-Based Research
+
+::: {.columns}
+
+::: {.column width="52%"}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{img/fig-dbr.pdf}
+\end{center}
+
+:::
+
+::: {.column width="48%"}
+
+\small
+
+DBR nach [@reinmann2005innovation]: viele iterative Zyklen, in denen
+Interventionen schrittweise verfeinert werden.
+
+\vspace{0.4em}
+
+Abgrenzung zu **Design Science Research**
+[@vombrockeIntroductionDesignScience2020]:
+
+- DBR: iterativ, lauffähige Prototypen entstehen *unterwegs*
+- DSR: parallele Zyklen, Artefakt oft erst *am Ende*
+
+\vspace{0.4em}
+
+Gemeinsamer Nenner: Fokus auf **Designprinzipien** und eine Vision der
+Zukunft --- in DBR das "what could be". Der Prozess folgt nicht bloß den
+Anforderungen, weil diese noch virtuell sind.
+
+:::
+
+:::
+
+---
+
+## Quellmodell 3: Der empirische Forschungsprozess {.shrink}
+
+::: {.columns}
+
+::: {.column width="58%"}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.72\textheight,keepaspectratio]{img/fig-schnell.pdf}
+\end{center}
+
+:::
+
+::: {.column width="42%"}
+
+\small
+
+Nach [@schnell1999methoden], angepasst um den Simulationszweig und um
+Marken (\raisebox{-0.9ex}{\includegraphics[height=2.6ex]{rse-cycle.png}}),
+wo RSE auftritt.
+
+\vspace{0.4em}
+
+Zentral ist die **Operationalisierung**: Variablen werden in messbare
+Items und vermutete Zusammenhänge zerlegt. Diese Zusammenhänge speisen
+die *Mechanismen* der Simulation.
+
+\vspace{0.4em}
+
+**Innere RSE-Projekte:** Erhebung, Aufzeichnung und Auswertung können
+je einen eigenen RSE-Prozess enthalten. Diese sind nicht notwendig
+menschzugewandt --- das vermeidet eine rekursive Modelldefinition.
+
+:::
+
+:::
+
+# Wie Forschungssoftware die Studie verändert
+
+## Zwei Fälle
+
+Forschungssoftware kann
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+**(i)** Beziehungen zwischen Variablen beeinflussen, während das
+Variablenuniversum im Wesentlichen unverändert bleibt
+
+\vspace{0.3em}
+
+$\Rightarrow$ Die Studie bliebe auch ohne die Software durchführbar
+(z.B. mit einem Papierverfahren $RS_0$).
+
+:::
+
+::: {.column width="50%"}
+
+**(ii)** den Forschungskontext so **transformieren**, dass die Studie
+erst mit der Software möglich wird
+
+\vspace{0.3em}
+
+$\Rightarrow$ Die Software ändert, was als unabhängige Variable gelten
+kann, was messbar ist, und sogar was als Ergebnis zählt.
+
+:::
+
+:::
+
+\vspace{1em}
+
+\begin{alertblock}{Der Unterschied}
+Im ersten Fall ändert Forschungssoftware, \emph{wie} eine bereits
+definierbare Studie ausgeführt wird. Im zweiten Fall ändert sie,
+\emph{welche Studie überhaupt definierbar} ist.
+\end{alertblock}
+
+---
+
+## Fall 1: Software beeinflusst Beziehungen
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{img/fig-case1.pdf}
+\end{center}
+
+:::
+
+::: {.column width="55%"}
+
+**Beispiel:** Vokabellernen mit einer Lern-App.
+
+- $RS$ --- die App
+- $T$ --- Übungsintensität
+- $Y$ --- Vokabelscore
+- $U$ --- Lernendenmerkmale (Confounder)
+
+\vspace{0.5em}
+
+Die Software beeinflusst den Pfad von der Übung zum Lernergebnis, führt
+aber **keine grundsätzlich neuen Variablen** ein. $RS$ tritt als
+Mediator zur Variablenmenge hinzu.
+
+\vspace{0.5em}
+
+Die Rollen von unabhängiger und abhängiger Variable bleiben stabil.
+
+:::
+
+:::
+
+---
+
+## Fall 2: Software transformiert den Kontext {.shrink}
+
+::: {.columns}
+
+::: {.column width="52%"}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{img/fig-case2.pdf}
+\end{center}
+
+:::
+
+::: {.column width="48%"}
+
+\small
+
+**Beispiel:** algorithmische Gruppenbildung in großen Kursen --- ohne
+Software bei komplexen Constraints praktisch unmöglich.
+
+Neue **unabhängige** Variablen: $A$, $X$. Neue **abhängige**
+Variablen: $G$, $Y'$.
+
+\vspace{0.4em}
+
+\begin{alertblock}{Nicht nur neue Variablen}
+\small Auch ihre \textbf{Interpretation} ändert sich:
+Gruppenlernergebnisse sind nicht die Aggregation individueller
+Ergebnisse. Das erzwingt einen Rücksprung zu Theorie und
+Operationalisierung --- der Wechsel von empirisch-begründet zu DBR.
+\end{alertblock}
+
+:::
+
+:::
+
+# Das RIGHT-Framework
+
+## Die RIGHT-Entscheidungen {.shrink}
+
+::: {.columns}
+
+::: {.column width="55%"}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.72\textheight,keepaspectratio]{img/fig-right.pdf}
+\end{center}
+
+:::
+
+::: {.column width="45%"}
+
+\small
+
+\textbf{[R]}esearch \textbf{[I]}ntegrity \textbf{[G]}iven
+\textbf{[H]}uman-facing \textbf{[T]}echnologies
+
+\vspace{0.4em}
+
+Links die Entscheidungspunkte **D1--D4**, rechts die passenden
+empirischen Methoden zur Prüfung der Konstruktvalidität. Die vier
+Knoten tragen die Buchstaben des Merkworts --- Figur und Akronym
+bilden sich direkt aufeinander ab.
+
+\vspace{0.4em}
+
+\begin{block}{Akkumulation}
+\small Je komplexer die Forschung durch die Softwareeffekte wird,
+desto mehr Methoden sind nötig. M1 muss in der Regel von M2--M4
+begleitet werden --- analog zum Regressionstesten.
+\end{block}
+
+:::
+
+:::
+
+---
+
+## D1 [R]elevanz und D2 [H]uman-in-the-Loop
+
+**D1 --- Ist die Software für die Forschung überhaupt relevant?**
+
+Nicht trivial. Technologie-Hypes (aktuell LLMs) verleiten dazu, Technik
+einzusetzen, obwohl es Alternativen mit weniger verschleiernder Wirkung
+gibt. Auch *ownership*-Gefühle und Pfadabhängigkeit führen zu
+Softwareentwicklung unabhängig vom Erkenntnisgewinn.
+
+*Nein* $\Rightarrow$ die empirische Studie läuft normal (S1).
+
+\vspace{0.7em}
+
+**D2 --- Gibt es Menschen in der Schleife?**
+
+Menschen, die zusätzliche Komplexität durch Bias, zusätzliche Variablen
+oder Interaktionseffekte erzeugen, weil sie selbst Teil der
+Analyseeinheit sind.
+
+*Nein* $\Rightarrow$ klassische Softwareevaluation: Testen,
+Requirement-Tracing, ggf. formale Verifikation (M4).
+
+---
+
+## D3 [I]nteraktion und D4 [T]ransformation
+
+**D3 --- Interagieren die Menschen mit der Forschungsfrage?**
+
+Präzisierung von D2. *Nein* $\Rightarrow$ es genügt zu prüfen, dass die
+Usability (M3) keine organisatorischen Probleme wie Dropouts oder
+verzerrte Stichproben verursacht.
+
+\vspace{0.7em}
+
+**D4 --- Transformiert die Software den Forschungskontext?**
+
+Also sowohl die Variablenmenge als auch deren Interpretation (Fall 2).
+
+*Nein* $\Rightarrow$ der in D3 postulierte Interaktionseffekt muss über
+**konkurrente Validität** kontrolliert werden: eine Gruppe mit,
+eine ohne RS-Stimulus (M1). Wo das aus ethischen oder logistischen
+Gründen nicht geht, hilft ein **Wizard-of-Oz**-Design (M2) --- der
+Effekt der Software wird ohne ihren tatsächlichen Einsatz nachgebildet.
+
+*Ja* $\Rightarrow$ Design-Based Research (S2).
+
+---
+
+## Der fünfte Buchstabe: [G]eneration {.shrink}
+
+\begin{block}{Warum G kein Kaskadenknoten ist}
+\textbf{[G]eneration} fragt: Können die empirischen Ergebnisse
+synthetisch erzeugt werden, sodass die Simulationsmethode verfügbar
+wird?
+\end{block}
+
+Das ist bewusst **kein** Knoten in der D1--D4-Kaskade, sondern ein
+orthogonales **Simulations-Gate an S1**, innerhalb des inneren
+empirischen Studiendesigns.
+
+Der Grund: Anders als D1--D4 verzweigt es die Kaskade nicht, sondern
+**ergänzt den empirischen Pfad** --- unabhängig davon, wo die Kaskade
+verlassen wird.
+
+\vspace{0.4em}
+
+\small
+
+| | Merkwort | Frage |
+|:--|:--|:--|
+| D1 | **[R]**elevanz | Ist genau diese RS nötig? |
+| D2 | **[H]**uman-in-the-Loop | Menschen Nutzende *und* Teil des Kontexts? |
+| D3 | **[I]**nteraktion | Interaktion mit der Forschungsfrage? |
+| D4 | **[T]**ransformation | Neuinterpretation der Variablen erzwungen? |
+| S1 | **[G]**eneration | Ergebnisse synthetisierbar? |
+
+# Empirische Validierung
+
+## Das DELFI-Korpus
+
+Das RIGHT-Modell ist theoretisch über Theorietransfer hergeleitet ---
+aber seine Entscheidungspunkte machen **empirisch prüfbare Aussagen**.
+
+\vspace{0.6em}
+
+Testfall: die DELFI-Proceedings 2003--2025, $n = 266$ Publikationen mit
+konkretem empirischen Studiensetting
+[@dehne2026rseLearningTechnologies]. Eine Community, die sehr aktiv
+Software entwickelt *und* im menschzugewandten Bildungskontext forscht.
+
+\vspace{0.6em}
+
+Annotiert per Mehrheitsentscheid dreier quelloffener LLMs --- die
+Übereinstimmung liegt bei rund 0.8.
+
+---
+
+## Das Codebuch als Operationalisierung
+
+Der Prompt operationalisiert das RIGHT-Framework direkt: jede
+Publikation wird mit **D1--D4** und den sechs empfohlenen Methoden
+(**S1, S2, M1--M4**) binär annotiert.
+
+\vspace{0.6em}
+
+\begin{block}{Warum das methodisch zählt}
+Das Codebuch legt fest, welche Textevidenz eine annotierende Instanz
+finden muss --- auch für das sonst abstrakte Urteil, ob die Software
+den Forschungskontext \emph{transformiert} (D4).
+\end{block}
+
+---
+
+## Wenn das Messinstrument selbst ein Modell ist
+
+Zwei Beobachtungen aus der Annotation:
+
+- Die Modelle sind unterschiedlich **liberal** --- dasselbe Paper wird
+  je nach Modell systematisch anders kodiert.
+- Zwei Modelle **derselben Familie** stimmten miteinander weit stärker
+  überein als mit jedem anderen Modell.
+
+\vspace{0.6em}
+
+\begin{alertblock}{Der methodische Punkt}
+Ein Mehrheitsentscheid über verwandte Modelle misst nicht mehr Konsens,
+sondern Modellverwandtschaft. Die Wahl des Ensembles ist selbst eine
+\textbf{Validitätsfrage} --- das Instrument ist Teil des
+Forschungskontexts, nicht neutral dazu.
+\end{alertblock}
+
+---
+
+## Norm gegen Praxis {.shrink}
+
+\begin{center}
+\includegraphics[width=0.68\linewidth,height=0.70\textheight,keepaspectratio]{img/fig-right-empirical.pdf}
+\end{center}
+
+\begin{center}
+\small Die RIGHT-Kaskade, annotiert mit dem DELFI-Korpus ($n = 266$,
+Mehrheitsentscheid dreier LLMs).
+\end{center}
+
+---
+
+## Wo die Praxis dem Modell folgt --- und wo nicht {.shrink}
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+\begin{block}{Im Rahmen}
+\textbf{M4} Softwareevaluation und \textbf{M3} Usability-Evaluation
+werden etwa so breit angewandt, wie das Modell sie vorschreibt.
+
+\textbf{S2} Design-Based Research ist die einzige Methode, die
+\emph{häufiger} angewandt wird als gefordert.
+\end{block}
+
+:::
+
+::: {.column width="50%"}
+
+\begin{alertblock}{Die Lücken}
+\textbf{S1} empirische Studie: 94\% sollten, nur 33\% tun es
+
+\textbf{M1 $\vee$ M2} Kontrolle der Interaktionseffekte: 60\% sollten,
+nur 13\% tun es
+\end{alertblock}
+
+:::
+
+:::
+
+\vspace{0.5em}
+
+Die wahrscheinlichste Erklärung der S1-Lücke: Die Papers enden mit der
+Präsentation der methodischen Ergebnisse, **ohne die ursprünglich
+intendierte Studie je zu erreichen**.
+
+---
+
+## Der Befund
+
+\begin{alertblock}{Kernaussage}
+Die Community evaluiert die \textbf{Software} und ihre
+\textbf{Usability} etwa so breit, wie das Modell es verlangt. Aber sie
+rahmt die Arbeit selten als kontrollierte empirische Studie (S1) und
+implementiert fast nie die Kontrolle der konkurrenten Validität
+(M1 $\vee$ M2), die das Modell fordert, sobald D2 und D3 bejaht sind.
+\end{alertblock}
+
+\vspace{0.5em}
+
+Weil D4 nur für 6\% bejaht wird, schickt die Kaskade **94\% der
+verbleibenden Studien den D4="nein"-Zweig hinunter** --- also genau
+dorthin, wo M1/M2 verpflichtend wäre.
+
+\vspace{0.5em}
+
+$\Rightarrow$ Genau das ist der Validitäts-blinde-Fleck, den RIGHT
+sichtbar machen soll: **Je stärker die Forschungssoftware mit der
+menschzugewandten Forschungsfrage interagiert, desto mehr wird die
+fehlende Kontrolle der konkurrenten Validität zur Bedrohung der
+Konstruktvalidität.**
+
+# Einordnung
+
+## Grenzen
+
+- **Scope:** die Schnittmenge aus empirischen Studien, RSE und
+  Design-Based Research. Manche Ideen verallgemeinern sich auf andere
+  Disziplinen weniger nützlich.
+
+- **Die empirische Validierung ist beobachtend.** Sie zeigt, *wo*
+  berichtete Praxis vom Modell abweicht --- noch nicht, *ob* das Befolgen
+  des Modells zu besseren methodischen Entscheidungen führt.
+
+- **LLM-Annotation statt menschlicher Kodierung.** Die Übereinstimmung
+  ist gut, aber die Labels messen, was in den Papers *berichtet* wird,
+  nicht was tatsächlich *getan* wurde.
+
+- **Objektivität**, das dritte Gütekriterium, bleibt vollständig außen
+  vor.
+
+---
+
+## Ausblick: Skalierung auf das LNI-Korpus \hfill \small (work in progress)
+
+Ziel: eine **Typologie der Forschungssoftware**, die informatische
+Forschung überhaupt hervorbringt --- über das GI-LNI-Korpus statt nur
+über DELFI.
+
+\vspace{0.6em}
+
+Offene Frage dabei: **binär robust, ordinal fragil.** Ob ein Paper
+Forschungssoftware produziert, lässt sich zuverlässig kodieren --- Art,
+Reifegrad und Rolle im Forschungsdesign bisher nicht. Der Engpass ist
+die Operationalisierung, nicht das Instrument.
+
+---
+
+## Fazit
+
+\begin{block}{To be FAIR or to be RIGHT?}
+Die Antwort ist: \textbf{beides zählt} für nachhaltige Forschung. Die
+FAIR-Prinzipien adressieren die Reliabilität und sind unverzichtbar.
+Aber sie sind für menschzugewandte Forschungssoftware nicht hinreichend.
+\end{block}
+
+\vspace{0.5em}
+
+- Aus Simulation, DBR, klassischem SE und empirischer Forschung lässt
+  sich ein **Meta-Entscheidungsmodell** synthetisieren, das
+  Konstruktvalidität in komplexen menschzugewandten Szenarien absichert.
+
+- Die Praxis im DELFI-Korpus berücksichtigt die **Interaktionseffekte
+  klar nicht**.
+
+- Für die eScience-Community bleibt offen, Methoden und Prozessmodelle
+  zu entwickeln, die solche Effekte **systematisch messbar** machen.
+
+\vspace{0.5em}
+
+Nächster Schritt: die dritte Güte-Dimension, **Objektivität**.
+
+---
+
+## Diskussion
+
+\begin{center}
+\Large
+
+Wo in Ihren eigenen Projekten liegt der Ausstieg aus der Kaskade?
+
+\vspace{1em}
+
+\normalsize
+D1 [R]elevanz \quad$\rightarrow$\quad D2 [H]uman-in-the-Loop
+\quad$\rightarrow$\quad D3 [I]nteraktion \quad$\rightarrow$\quad
+D4 [T]ransformation
+
+\vspace{1.5em}
+
+\small Und: wann haben Sie zuletzt eine Kontrollbedingung ohne die
+Software gerechnet?
+
+\end{center}
+
+## Literatur {.allowframebreaks}
+
+::: {#refs}
+:::

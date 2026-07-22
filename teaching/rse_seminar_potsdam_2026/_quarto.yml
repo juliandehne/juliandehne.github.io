@@ -1,0 +1,5 @@
+# Own project so the deck does not inherit the website's author block,
+# CSL and ../../references.bib -- and so the PDF lands next to the source
+# instead of in ../../_site/.
+project:
+  type: default
