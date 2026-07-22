@@ -28,6 +28,7 @@
 
 - since 2025: Founder of the Working Group on the Recognition of Research Software (*AK Auszeichnung von Forschungssoftware*) within the [GI Fachgruppe RSE](https://fg-rse.gi.de/), and organiser of its 2026 annual meeting
 - since 2019: PC member of [DELFI](https://delfi-tagung.de/delfi-2024), the annual GI conference on educational technologies
+- 2026: Editor of the proceedings of INFORMATIK 2026, the annual GI conference (*Lecture Notes in Informatics*)
 - 2026: PC member of [deRSE26](https://events.hifis.net/event/2945/), the 6th Conference for Research Software Engineering in Germany
 - 2024: PC member of [CPSS](https://sites.google.com/view/cpss2024konvens/home-page) at KONVENS
 - Co-Organizer of Sektionstagung Methoden der DVPW (2023)

@@ -108,6 +108,9 @@ Earlier I was a postdoctoral researcher at the University of Göttingen (social 
 # Service and Awards
 
 ```{=latex}
+\cvevent{2026}{Proceedings Editor}{INFORMATIK 2026 (GI)}{%
+{Editor of the proceedings of the annual conference of the Gesellschaft für Informatik, Lecture Notes in Informatics}}
+
 \cvevent{2026}{Programme Committee Member}{deRSE26}{%
 {6th Conference for Research Software Engineering in Germany, Stuttgart}}
 
