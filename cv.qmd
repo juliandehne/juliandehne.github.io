@@ -45,7 +45,7 @@ Earlier I was a postdoctoral researcher at the University of Göttingen (social 
 {Implementation of automated data quality and reproducibility checks}}
 
 \cvevent{2021 -- 2024}{Postdoctoral Researcher}{University of Göttingen}{%
-{Project lead and development lead of the Delab framework, Department of Methods in the Social Sciences},
+{Project lead and development lead of the Delab framework, Institute of Methods and Methodological Principles},
 {Human-in-the-loop experiments on social media deliberation with Reddit and Twitter},
 {NLP with transformer models, run in part on cluster infrastructure},
 {Substitute project coordination}}
