@@ -42,7 +42,6 @@ execute:
   warning: false
   error: false
   cache: false
-  r-path: "C:/Program Files/R/R-4.4.0/bin/x64/R"
   python-path: "C:/ProgramData/anaconda3/envs/sem_rep_left-right/bin/python"
   freeze: auto
 
