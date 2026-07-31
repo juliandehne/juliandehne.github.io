@@ -1,5 +1,9 @@
 # Teaching
 
+## Topics
+
+Current topics for BA and MA thesis can be found [here](teaching/rse/ai_rse_topics.pdf)
+
 ## Classroom Experience
 - **Tutor** for Applied Logic and Didactics of Computer Science, University of Potsdam
 - **Teacher** for Computer Science and Political Education: Albert-Einstein-Gymnasium, Berlin
